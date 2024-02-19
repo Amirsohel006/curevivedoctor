@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listgroup100000197RowModel" type="com.curevivedoctor.app.modules.wallettransactions.data.model.Listgroup100000197RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRow25000"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/linearRowgroup100000197"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.6" android:layout_width="0dp" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGroup100000197"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:layout_weight="0.24" android:layout_width="0dp"
+                android:paddingBottom="@dimen/_1pxv"
+                android:paddingStart="@dimen/_6pxh"
+                android:paddingTop="@dimen/_1pxv"
+                android:singleLine="true"
+                android:text="@{listgroup100000197RowModel.txtGroup100000197}"
+                style="@style/txtRoundedOutline_6" tools:text="@string/lbl_a"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAlphange"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_weight="0.76" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{listgroup100000197RowModel.txtAlphange}"
+                style="@style/txtPoppinsregular16_8" tools:text="@string/lbl_alphange"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txt25000"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_141pxh"
+            android:layout_weight="0.4" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listgroup100000197RowModel.txt25000}"
+            style="@style/txtPoppinsmedium18_1" tools:text="@string/lbl_250_00"/>
+    </LinearLayout>
+</layout>

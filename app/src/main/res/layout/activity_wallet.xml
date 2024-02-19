@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="walletVM" type="com.curevivedoctor.app.modules.wallet.data.viewmodel.WalletVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameWallet"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumntotalincome"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            style="@style/groupStyleblue_802cornerRadius">
+            <LinearLayout android:id="@+id/linearRowtotalincome"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTotalincome"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.63"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{walletVM.walletModel.txtTotalincome}"
+                    style="@style/txtPoppinsregular24" tools:text="@string/lbl_total_income"/>
+                <LinearLayout android:id="@+id/linearRowprice"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_marginStart="@dimen/_76pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_weight="0.37"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPrice"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.88"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{walletVM.walletModel.txtPrice}"
+                        style="@style/txtPoppinsmedium20" tools:text="@string/lbl_4_599"/>
+                    <ImageView android:id="@+id/imageArrowright"
+                        android:layout_height="@dimen/_17pxh"
+                        android:layout_marginBottom="@dimen/_7pxv"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="@dimen/_9pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowright_white_a700"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright_white_a700"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnanalysis"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecyan_402cornerRadius">
+                <LinearLayout android:id="@+id/linearRowanalysis"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAnalysis"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.83"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{walletVM.walletModel.txtAnalysis}"
+                        style="@style/txtPoppinsregular24" tools:text="@string/lbl_analysis"/>
+                    <ImageView android:id="@+id/imageVector"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginStart="@dimen/_206pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_width="@dimen/_20pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_vector_white_a700"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700"/>
+                </LinearLayout>
+                <FrameLayout android:gravity="start"
+                    android:id="@+id/frameStackaccounts"
+                    android:layout_height="@dimen/_537pxv"
+                    android:layout_marginTop="@dimen/_14pxv" android:layout_width="match_parent">
+                    <LinearLayout android:id="@+id/linearColumnline241"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_1pxh"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_16">
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearRowaccounts"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_15pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_31pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearColumnaccounts"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_12pxv"
+                                android:layout_weight="0.68"
+                                android:layout_width="0dp" android:orientation="vertical">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtAccounts"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{walletVM.walletModel.txtAccounts}"
+                                    style="@style/txtPoppinsregular23" tools:text="@string/lbl_accounts"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtHDFCBank"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{walletVM.walletModel.txtHDFCBank}"
+                                    style="@style/txtPoppinsregular18"
+                                    textUnderline="true" tools:text="@string/lbl_hdfc_bank"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearColumnpriceOne"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:layout_weight="0.32"
+                                android:layout_width="0dp" android:orientation="vertical">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtPriceOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{walletVM.walletModel.txtPriceOne}"
+                                    style="@style/txtPoppinssemibold20_2" tools:text="@string/lbl_3_255"/>
+                                <TextView
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtWithdrawablebalOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="@{walletVM.walletModel.txtWithdrawablebalOne}"
+                                    style="@style/txtPoppinsregular15" tools:text="@string/msg_withdrawablebal"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:background="@color/gray_700_7f"
+                            android:id="@+id/lineLine241"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_15pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_37pxv" android:layout_width="@dimen/_327pxh"/>
+                        <LinearLayout android:id="@+id/linearRowmybanks"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_15pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_18pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtMyBanks"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_marginTop="@dimen/_1pxv"
+                                android:layout_weight="0.46"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{walletVM.walletModel.txtMyBanks}"
+                                style="@style/txtInterregular23" tools:text="@string/lbl_my_banks"/>
+                            <EditText
+                                android:background="@drawable/rectangle_bg_blue_503_radius_10"
+                                android:drawablePadding="@dimen/_6pxh"
+                                android:drawableStart="@drawable/img_close"
+                                android:ellipsize="end"
+                                android:hint="@string/lbl_add_account"
+                                android:id="@+id/etFrame3706"
+                                android:inputType="text"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_94pxh"
+                                android:layout_weight="0.54"
+                                android:layout_width="0dp"
+                                android:paddingBottom="@dimen/_7pxv"
+                                android:paddingEnd="@dimen/_15pxh"
+                                android:paddingStart="@dimen/_15pxh"
+                                android:paddingTop="@dimen/_6pxv"
+                                android:singleLine="true"
+                                android:text="@={walletVM.walletModel.etFrame3706Value}"
+                                android:textColorHint="@color/white_A700"
+                                style="@style/etSolidRounded_4" tools:ignore="Autofill"/>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtCards"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_16pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_19pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{walletVM.walletModel.txtCards}"
+                            style="@style/txtIntermedium16" tools:text="@string/lbl_cards"/>
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearColumndeveloperboard"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_111pxv"
+                            android:layout_marginEnd="@dimen/_15pxh"
+                            android:layout_marginStart="@dimen/_16pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius_27">
+                            <ImageView
+                                android:id="@+id/imageDeveloperboard"
+                                android:layout_height="@dimen/_30pxh"
+                                android:layout_marginEnd="@dimen/_24pxh"
+                                android:layout_marginStart="@dimen/_24pxh"
+                                android:layout_marginTop="@dimen/_22pxv"
+                                android:layout_width="@dimen/_44pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_developerboard"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_developerboard"/>
+                            <LinearLayout android:gravity="start"
+                                android:id="@+id/linearColumnavailable"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_6pxv"
+                                android:layout_marginEnd="@dimen/_24pxh"
+                                android:layout_marginStart="@dimen/_24pxh"
+                                android:layout_marginTop="@dimen/_6pxv"
+                                android:layout_width="wrap_content" android:orientation="vertical">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtAvailable"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{walletVM.walletModel.txtAvailable}"
+                                    style="@style/txtPoppinsregular16_6" tools:text="@string/lbl_available"/>
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtPriceTwo"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_10pxh"
+                                    android:layout_width="match_parent"
+                                    android:letterSpacing="0.05"
+                                    android:singleLine="true"
+                                    android:text="@{walletVM.walletModel.txtPriceTwo}"
+                                    style="@style/txtPoppinssemibold25" tools:text="@string/lbl_5_255"/>
+                                <LinearLayout
+                                    android:id="@+id/linearRowvisa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_1pxh"
+                                    android:layout_marginTop="@dimen/_19pxv"
+                                    android:layout_width="wrap_content" android:orientation="horizontal">
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtVisa"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.52"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{walletVM.walletModel.txtVisa}"
+                                    style="@style/txtPoppinsregular20" tools:text="@string/lbl_visa"/>
+                                    <TextView android:ellipsize="end"
+                                    android:id="@+id/txtPassword"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_2pxv"
+                                    android:layout_marginStart="@dimen/_42pxh"
+                                    android:layout_marginTop="@dimen/_2pxv"
+                                    android:layout_weight="0.48"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{walletVM.walletModel.txtPassword}"
+                                    style="@style/txtInterregular20" tools:text="@string/lbl3"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageArrowrightOne"
+                        android:layout_gravity="top|end"
+                        android:layout_height="@dimen/_20pxh"
+                        android:layout_marginBottom="@dimen/_212pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_212pxv"
+                        android:layout_width="@dimen/_1pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowright_black_900"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright_black_900"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

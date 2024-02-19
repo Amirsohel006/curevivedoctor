@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="yogaProtocolOneVM" type="com.curevivedoctor.app.modules.yogaprotocolone.data.viewmodel.YogaProtocolOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackyoga"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyle_1">
+        <LinearLayout android:id="@+id/linearColumnyoga"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:contentInsetStart="0dp" style="@style/groupStyle_2">
+                <LinearLayout android:id="@+id/linearRowrepeat"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_51pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/linearRowyoga"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.63"
+                        android:layout_width="0dp" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageImageThirty"
+                            android:layout_height="@dimen/_45pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_15pxh}"
+                            imageRes="@{@drawable/img_image30}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_image30"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtYOGA"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5pxv"
+                            android:layout_marginStart="@dimen/_20pxh"
+                            android:layout_marginTop="@dimen/_9pxv"
+                            android:layout_weight="0.59"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtYOGA}"
+                            style="@style/txtPoppinsmedium20" tools:text="@string/lbl_yoga2"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnrepeat"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_7pxv"
+                        android:layout_marginStart="@dimen/_134pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_weight="0.37"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700_1ecornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:gravity="end"
+                            android:id="@+id/txtREPEAT"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_8pxv"
+                            android:layout_marginEnd="@dimen/_2pxh"
+                            android:layout_marginStart="@dimen/_5pxh"
+                            android:layout_marginTop="@dimen/_8pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtREPEAT}"
+                            style="@style/txt_2" tools:text="@string/lbl_repeat"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <ScrollView android:clipToPadding="false"
+                android:fillViewport="true"
+                android:id="@+id/scrollViewScrollview"
+                android:layout_height="match_parent"
+                android:layout_weight="1" android:layout_width="match_parent">
+                <FrameLayout android:id="@+id/frameYogaProtocolO"
+                    android:layout_height="match_parent" android:layout_width="match_parent">
+                    <LinearLayout
+                        android:id="@+id/linearColumnsittingasanas"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumndescription"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylewhite_5">
+                            <TextView
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtDescription"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_30pxv"
+                                android:layout_marginEnd="@dimen/_23pxh"
+                                android:layout_marginStart="@dimen/_23pxh"
+                                android:layout_marginTop="@dimen/_26pxv"
+                                android:layout_width="match_parent"
+                                android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtDescription}"
+                                style="@style/txtAssistantromanregular16_1" tools:text="@string/msg_follow_the_prov"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumnstretching"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_28pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylewhite_A700_7ccornerRadius">
+                            <LinearLayout
+                                android:id="@+id/linearRowstretching"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_8pxv"
+                                android:layout_marginEnd="@dimen/_29pxh"
+                                android:layout_marginStart="@dimen/_29pxh"
+                                android:layout_marginTop="@dimen/_12pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal" style="@style/groupStylecornerRadius_17">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtStretching"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.82"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtStretching}"
+                                    style="@style/txtPoppinsmedium18" tools:text="@string/lbl_stretching"/>
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                    android:id="@+id/btnArrowdown"
+                                    android:layout_height="@dimen/_21pxh"
+                                    android:layout_marginBottom="@dimen/_5pxv"
+                                    android:layout_marginStart="@dimen/_155pxh"
+                                    android:layout_marginTop="@dimen/_1pxv"
+                                    android:layout_width="@dimen/_20pxh"
+                                    android:paddingHorizontal="@dimen/_6pxh"
+                                    android:paddingVertical="@dimen/_6pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumnstandingasanas"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5pxh"
+                            android:layout_marginTop="@dimen/_28pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius_10">
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnnone"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_49pxh"
+                                android:layout_marginStart="@dimen/_49pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical" style="@style/groupStylewhite_A700_7ccornerRadius">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtNone"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_88pxh"
+                                    android:layout_marginStart="@dimen/_88pxh"
+                                    android:layout_marginTop="@dimen/_7pxv"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtNone}"
+                                    style="@style/txtPoppinsbold18" tools:text="@string/lbl_none2"/>
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                    android:id="@+id/btnArrowdownOne"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_21pxh"
+                                    android:layout_marginBottom="@dimen/_8pxv"
+                                    android:layout_marginEnd="@dimen/_88pxh"
+                                    android:layout_marginStart="@dimen/_88pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="@dimen/_20pxh"
+                                    android:paddingHorizontal="@dimen/_6pxh"
+                                    android:paddingVertical="@dimen/_6pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                            </LinearLayout>
+                            <TextView android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtStandingAsanas"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_49pxh"
+                                android:layout_marginStart="@dimen/_49pxh"
+                                android:layout_marginTop="@dimen/_25pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtStandingAsanas}"
+                                style="@style/txtPoppinsmedium20" tools:text="@string/lbl_standing_asanas"/>
+                            <LinearLayout
+                                android:id="@+id/linearRowasanacounter"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal" style="@style/groupStylewhite_A700_7ccornerRadius">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtAsanaCounter"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginStart="@dimen/_30pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_weight="0.77"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtAsanaCounter}"
+                                    style="@style/txtPoppinsmedium18" tools:text="@string/lbl_asana_1"/>
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                    android:id="@+id/btnArrowdownTwo"
+                                    android:layout_height="@dimen/_21pxh"
+                                    android:layout_marginBottom="@dimen/_13pxv"
+                                    android:layout_marginEnd="@dimen/_19pxh"
+                                    android:layout_marginStart="@dimen/_186pxh"
+                                    android:layout_marginTop="@dimen/_13pxv"
+                                    android:layout_width="@dimen/_20pxh"
+                                    android:paddingHorizontal="@dimen/_6pxh"
+                                    android:paddingVertical="@dimen/_6pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/linearRowlanguage"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2pxh"
+                                android:layout_marginTop="@dimen/_14pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal" style="@style/groupStylewhite_A700_7ccornerRadius">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtLanguage"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginStart="@dimen/_29pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_weight="0.79"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtLanguage}"
+                                    style="@style/txtPoppinsmedium18" tools:text="@string/lbl_asana_2"/>
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                    android:id="@+id/btnArrowdownThree"
+                                    android:layout_height="@dimen/_21pxh"
+                                    android:layout_marginBottom="@dimen/_13pxv"
+                                    android:layout_marginEnd="@dimen/_19pxh"
+                                    android:layout_marginStart="@dimen/_178pxh"
+                                    android:layout_marginTop="@dimen/_13pxv"
+                                    android:layout_width="@dimen/_20pxh"
+                                    android:paddingHorizontal="@dimen/_6pxh"
+                                    android:paddingVertical="@dimen/_6pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/linearRowasanacounterOne"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_39pxv"
+                                android:layout_marginStart="@dimen/_2pxh"
+                                android:layout_marginTop="@dimen/_14pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal" style="@style/groupStylewhite_A700_7ccornerRadius">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtAsanaCounterOne"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginStart="@dimen/_29pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_weight="0.79"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtAsanaCounterOne}"
+                                    style="@style/txtPoppinsmedium18" tools:text="@string/lbl_asana_3"/>
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                    android:id="@+id/btnArrowdownFour"
+                                    android:layout_height="@dimen/_21pxh"
+                                    android:layout_marginBottom="@dimen/_13pxv"
+                                    android:layout_marginEnd="@dimen/_19pxh"
+                                    android:layout_marginStart="@dimen/_178pxh"
+                                    android:layout_marginTop="@dimen/_13pxv"
+                                    android:layout_width="@dimen/_20pxh"
+                                    android:paddingHorizontal="@dimen/_6pxh"
+                                    android:paddingVertical="@dimen/_6pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumnstandingtosit"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_49pxh"
+                            android:layout_marginTop="@dimen/_28pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylewhite_A700_7ccornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtStandingtosit"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_24pxh"
+                                android:layout_marginStart="@dimen/_28pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtStandingtosit}"
+                                style="@style/txtPoppinsbold18" tools:text="@string/msg_standing_to_sit"/>
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                android:id="@+id/btnArrowdownFive"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_21pxh"
+                                android:layout_marginBottom="@dimen/_8pxv"
+                                android:layout_marginEnd="@dimen/_28pxh"
+                                android:layout_marginStart="@dimen/_28pxh"
+                                android:layout_marginTop="@dimen/_7pxv"
+                                android:layout_width="@dimen/_20pxh"
+                                android:paddingHorizontal="@dimen/_6pxh"
+                                android:paddingVertical="@dimen/_6pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtSittingAsanas"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_49pxh"
+                            android:layout_marginTop="@dimen/_23pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtSittingAsanas}"
+                            style="@style/txtPoppinsmedium20" tools:text="@string/lbl_sitting_asanas"/>
+                        <LinearLayout
+                            android:id="@+id/linearRowasanacounterTwo"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal" style="@style/groupStylewhite_A700_7ccornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtAsanaCounterTwo"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_11pxv"
+                                android:layout_marginStart="@dimen/_30pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_weight="0.78"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtAsanaCounterTwo}"
+                                style="@style/txtPoppinsmedium18" tools:text="@string/lbl_asana_1"/>
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                android:id="@+id/btnArrowdownSix"
+                                android:layout_height="@dimen/_21pxh"
+                                android:layout_marginBottom="@dimen/_13pxv"
+                                android:layout_marginEnd="@dimen/_23pxh"
+                                android:layout_marginStart="@dimen/_184pxh"
+                                android:layout_marginTop="@dimen/_13pxv"
+                                android:layout_width="@dimen/_20pxh"
+                                android:paddingHorizontal="@dimen/_6pxh"
+                                android:paddingVertical="@dimen/_6pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowlanguageOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal" style="@style/groupStylewhite_A700_7ccornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtLanguageOne"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginStart="@dimen/_32pxh"
+                                android:layout_marginTop="@dimen/_11pxv"
+                                android:layout_weight="0.79"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtLanguageOne}"
+                                style="@style/txtPoppinsmedium18" tools:text="@string/lbl_asana_2"/>
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                android:id="@+id/btnArrowdownSeven"
+                                android:layout_height="@dimen/_21pxh"
+                                android:layout_marginBottom="@dimen/_13pxv"
+                                android:layout_marginEnd="@dimen/_23pxh"
+                                android:layout_marginStart="@dimen/_178pxh"
+                                android:layout_marginTop="@dimen/_13pxv"
+                                android:layout_width="@dimen/_20pxh"
+                                android:paddingHorizontal="@dimen/_6pxh"
+                                android:paddingVertical="@dimen/_6pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowasanacounterThree"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal" style="@style/groupStylewhite_A700_7ccornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtAsanaCounterThree"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginStart="@dimen/_32pxh"
+                                android:layout_marginTop="@dimen/_11pxv"
+                                android:layout_weight="0.79"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtAsanaCounterThree}"
+                                style="@style/txtPoppinsmedium18" tools:text="@string/lbl_asana_3"/>
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                android:id="@+id/btnArrowdownEight"
+                                android:layout_height="@dimen/_21pxh"
+                                android:layout_marginBottom="@dimen/_13pxv"
+                                android:layout_marginEnd="@dimen/_23pxh"
+                                android:layout_marginStart="@dimen/_178pxh"
+                                android:layout_marginTop="@dimen/_13pxv"
+                                android:layout_width="@dimen/_20pxh"
+                                android:paddingHorizontal="@dimen/_6pxh"
+                                android:paddingVertical="@dimen/_6pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/imageClose"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_25pxh"
+                            android:layout_marginEnd="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_49pxh"
+                            android:layout_marginTop="@dimen/_23pxv"
+                            android:layout_width="@dimen/_25pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_close_white_a700"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_close_white_a700"/>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumnsupineasana"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5pxh"
+                            android:layout_marginTop="@dimen/_23pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius_10">
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnsittingtosupi"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_49pxh"
+                                android:layout_marginStart="@dimen/_49pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical" style="@style/groupStylewhite_A700_7ccornerRadius">
+                                <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtSittingtosupi"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_37pxh"
+                                    android:layout_marginStart="@dimen/_37pxh"
+                                    android:layout_marginTop="@dimen/_8pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtSittingtosupi}"
+                                    style="@style/txtPoppinsbold18" tools:text="@string/msg_sitting_to_supi"/>
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                    android:id="@+id/btnArrowdownNine"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_21pxh"
+                                    android:layout_marginBottom="@dimen/_8pxv"
+                                    android:layout_marginEnd="@dimen/_37pxh"
+                                    android:layout_marginStart="@dimen/_37pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="@dimen/_20pxh"
+                                    android:paddingHorizontal="@dimen/_6pxh"
+                                    android:paddingVertical="@dimen/_6pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                            </LinearLayout>
+                            <TextView android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtSupineasana"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_49pxh"
+                                android:layout_marginStart="@dimen/_49pxh"
+                                android:layout_marginTop="@dimen/_23pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtSupineasana}"
+                                style="@style/txtPoppinsmedium20" tools:text="@string/lbl_supine_asana"/>
+                            <LinearLayout
+                                android:id="@+id/linearRowasanacounterFour"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_13pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal" style="@style/groupStylewhite_A700_7ccornerRadius">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtAsanaCounterFour"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_11pxv"
+                                    android:layout_marginStart="@dimen/_30pxh"
+                                    android:layout_marginTop="@dimen/_10pxv"
+                                    android:layout_weight="0.78"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtAsanaCounterFour}"
+                                    style="@style/txtPoppinsmedium18" tools:text="@string/lbl_asana_1"/>
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                    android:id="@+id/btnArrowdownTen"
+                                    android:layout_height="@dimen/_21pxh"
+                                    android:layout_marginBottom="@dimen/_13pxv"
+                                    android:layout_marginEnd="@dimen/_19pxh"
+                                    android:layout_marginStart="@dimen/_184pxh"
+                                    android:layout_marginTop="@dimen/_13pxv"
+                                    android:layout_width="@dimen/_20pxh"
+                                    android:paddingHorizontal="@dimen/_6pxh"
+                                    android:paddingVertical="@dimen/_6pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/linearRowlanguageTwo"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2pxh"
+                                android:layout_marginTop="@dimen/_14pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal" style="@style/groupStylewhite_A700_7ccornerRadius">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtLanguageTwo"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginStart="@dimen/_29pxh"
+                                    android:layout_marginTop="@dimen/_11pxv"
+                                    android:layout_weight="0.79"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtLanguageTwo}"
+                                    style="@style/txtPoppinsmedium18" tools:text="@string/lbl_asana_2"/>
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                    android:id="@+id/btnArrowdownEleven"
+                                    android:layout_height="@dimen/_21pxh"
+                                    android:layout_marginBottom="@dimen/_13pxv"
+                                    android:layout_marginEnd="@dimen/_19pxh"
+                                    android:layout_marginStart="@dimen/_178pxh"
+                                    android:layout_marginTop="@dimen/_13pxv"
+                                    android:layout_width="@dimen/_20pxh"
+                                    android:paddingHorizontal="@dimen/_6pxh"
+                                    android:paddingVertical="@dimen/_6pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/linearRowasanacounterFive"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_39pxv"
+                                android:layout_marginStart="@dimen/_2pxh"
+                                android:layout_marginTop="@dimen/_14pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal" style="@style/groupStylewhite_A700_7ccornerRadius">
+                                <TextView android:ellipsize="end"
+                                    android:id="@+id/txtAsanaCounterFive"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_10pxv"
+                                    android:layout_marginStart="@dimen/_29pxh"
+                                    android:layout_marginTop="@dimen/_11pxv"
+                                    android:layout_weight="0.79"
+                                    android:layout_width="0dp"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtAsanaCounterFive}"
+                                    style="@style/txtPoppinsmedium18" tools:text="@string/lbl_asana_3"/>
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_10"
+                                    android:id="@+id/btnArrowdownTwelve"
+                                    android:layout_height="@dimen/_21pxh"
+                                    android:layout_marginBottom="@dimen/_13pxv"
+                                    android:layout_marginEnd="@dimen/_19pxh"
+                                    android:layout_marginStart="@dimen/_178pxh"
+                                    android:layout_marginTop="@dimen/_13pxv"
+                                    android:layout_width="@dimen/_20pxh"
+                                    android:paddingHorizontal="@dimen/_6pxh"
+                                    android:paddingVertical="@dimen/_6pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumnsupinetoprone"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_49pxh"
+                            android:layout_marginTop="@dimen/_28pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylewhite_A700_7ccornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtSupinetoprone"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_24pxh"
+                                android:layout_marginStart="@dimen/_28pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtSupinetoprone}"
+                                style="@style/txtPoppinsbold18" tools:text="@string/lbl_supine_to_prone"/>
+                            <FrameLayout
+                                android:id="@+id/frameStackarrowdownThirteen"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_21pxv"
+                                android:layout_marginBottom="@dimen/_8pxv"
+                                android:layout_marginEnd="@dimen/_28pxh"
+                                android:layout_marginStart="@dimen/_28pxh"
+                                android:layout_marginTop="@dimen/_7pxv"
+                                android:layout_width="@dimen/_20pxh" style="@style/groupStylewhite_6">
+                                <ImageView
+                                    android:id="@+id/imageArrowdownThirteen"
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_4pxh"
+                                    android:layout_marginBottom="@dimen/_8pxv"
+                                    android:layout_marginEnd="@dimen/_6pxh"
+                                    android:layout_marginStart="@dimen/_6pxh"
+                                    android:layout_marginTop="@dimen/_8pxv"
+                                    android:layout_width="@dimen/_7pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_arrowdown"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtProneasana"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_49pxh"
+                            android:layout_marginTop="@dimen/_23pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtProneasana}"
+                            style="@style/txtPoppinsmedium20" tools:text="@string/lbl_prone_asana"/>
+                        <Spinner
+                            android:background="@drawable/layer_list_bg_white_a700_7c_radius_19"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/spinnerAsanaCounterSix"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+                        <Spinner
+                            android:background="@drawable/layer_list_bg_white_a700_7c_radius_19"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/spinnerLanguageThree"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+                        <Spinner
+                            android:background="@drawable/layer_list_bg_white_a700_7c_radius_19"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/spinnerAsanaCounterSeven"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+                        <ImageView android:id="@+id/imageCloseOne"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_25pxh"
+                            android:layout_marginEnd="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_49pxh"
+                            android:layout_marginTop="@dimen/_23pxv"
+                            android:layout_width="@dimen/_25pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_close_white_a700"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_close_white_a700"/>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumnpranayama"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius_10">
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnpronetosittin"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_51pxh"
+                                android:layout_marginStart="@dimen/_51pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical" style="@style/groupStylewhite_A700_7ccornerRadius">
+                                <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtPronetosittin"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_42pxh"
+                                    android:layout_marginStart="@dimen/_42pxh"
+                                    android:layout_marginTop="@dimen/_8pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtPronetosittin}"
+                                    style="@style/txtPoppinsbold18" tools:text="@string/msg_prone_to_sittin"/>
+                                <FrameLayout
+                                    android:id="@+id/frameStackarrowdownFourteen"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="@dimen/_21pxv"
+                                    android:layout_marginBottom="@dimen/_8pxv"
+                                    android:layout_marginEnd="@dimen/_42pxh"
+                                    android:layout_marginStart="@dimen/_42pxh"
+                                    android:layout_marginTop="@dimen/_5pxv"
+                                    android:layout_width="@dimen/_20pxh" style="@style/groupStylewhite_6">
+                                    <ImageView
+                                    android:id="@+id/imageArrowdownFourteen"
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_4pxh"
+                                    android:layout_marginBottom="@dimen/_8pxv"
+                                    android:layout_marginEnd="@dimen/_6pxh"
+                                    android:layout_marginStart="@dimen/_6pxh"
+                                    android:layout_marginTop="@dimen/_8pxv"
+                                    android:layout_width="@dimen/_7pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_arrowdown"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
+                                </FrameLayout>
+                            </LinearLayout>
+                            <TextView android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtPranayama"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_51pxh"
+                                android:layout_marginStart="@dimen/_51pxh"
+                                android:layout_marginTop="@dimen/_23pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtPranayama}"
+                                style="@style/txtPoppinsmedium20" tools:text="@string/lbl_pranayama"/>
+                            <Spinner
+                                android:background="@drawable/layer_list_bg_white_a700_7c_radius_19"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/spinnerAsanaCounterEight"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_2pxh"
+                                android:layout_marginStart="@dimen/_2pxh"
+                                android:layout_marginTop="@dimen/_13pxv"
+                                android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+                            <Spinner
+                                android:background="@drawable/layer_list_bg_white_a700_7c_radius_19"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/spinnerLanguageFour"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_2pxh"
+                                android:layout_marginStart="@dimen/_4pxh"
+                                android:layout_marginTop="@dimen/_14pxv"
+                                android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+                            <Spinner
+                                android:background="@drawable/layer_list_bg_white_a700_7c_radius_19"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/spinnerAsanaCounterNine"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_39pxv"
+                                android:layout_marginEnd="@dimen/_2pxh"
+                                android:layout_marginStart="@dimen/_4pxh"
+                                android:layout_marginTop="@dimen/_14pxv"
+                                android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumnpronetosupine"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_49pxh"
+                            android:layout_marginTop="@dimen/_28pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylewhite_A700_7ccornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/txtPronetoSupine"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_24pxh"
+                                android:layout_marginStart="@dimen/_28pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="match_parent"
+                                android:singleLine="true"
+                                android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtPronetoSupine}"
+                                style="@style/txtPoppinsbold18" tools:text="@string/lbl_prone_to_supine"/>
+                            <FrameLayout
+                                android:id="@+id/frameStackarrowdownFifteen"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="@dimen/_21pxv"
+                                android:layout_marginBottom="@dimen/_8pxv"
+                                android:layout_marginEnd="@dimen/_28pxh"
+                                android:layout_marginStart="@dimen/_28pxh"
+                                android:layout_marginTop="@dimen/_7pxv"
+                                android:layout_width="@dimen/_20pxh" style="@style/groupStylewhite_6">
+                                <ImageView
+                                    android:id="@+id/imageArrowdownFifteen"
+                                    android:layout_gravity="center"
+                                    android:layout_height="@dimen/_4pxh"
+                                    android:layout_marginBottom="@dimen/_8pxv"
+                                    android:layout_marginEnd="@dimen/_6pxh"
+                                    android:layout_marginStart="@dimen/_6pxh"
+                                    android:layout_marginTop="@dimen/_8pxv"
+                                    android:layout_width="@dimen/_7pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_arrowdown"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtRelaxation"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_49pxh"
+                            android:layout_marginTop="@dimen/_23pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtRelaxation}"
+                            style="@style/txtPoppinsmedium20" tools:text="@string/lbl_relaxation"/>
+                        <Spinner
+                            android:background="@drawable/layer_list_bg_white_a700_7c_radius_19"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/spinnerWeburl"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_5pxh"
+                            android:layout_marginStart="@dimen/_2pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+                        <ImageView android:id="@+id/imageCloseTwo"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_25pxh"
+                            android:layout_marginEnd="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_49pxh"
+                            android:layout_marginTop="@dimen/_19pxv"
+                            android:layout_width="@dimen/_25pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_close_white_a700"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_close_white_a700"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTime"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_4pxh"
+                            android:layout_marginTop="@dimen/_28pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtTime}"
+                            style="@style/txt_4" tools:text="@string/msg_duration_30_m"/>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumnsubmit"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_44pxv"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:id="@+id/btnSubmit"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:paddingBottom="@dimen/_14pxv"
+                                android:paddingEnd="@dimen/_30pxh"
+                                android:paddingStart="@dimen/_30pxh"
+                                android:paddingTop="@dimen/_14pxv"
+                                android:singleLine="true"
+                                android:text="@string/lbl_submit"
+                                android:textAllCaps="false"
+                                style="@style/btnGradientRounded" tools:text="@string/lbl_submit"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtSkip"
+                        android:layout_gravity="top|end"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_61pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_61pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtSkip}"
+                        style="@style/txtPoppinsregular20" tools:text="@string/lbl_skip"/>
+                    <LinearLayout
+                        android:id="@+id/linearColumncloseThree"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylegray_700_ba">
+                        <ImageView android:id="@+id/imageCloseThree"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_22pxh"
+                            android:layout_marginEnd="@dimen/_39pxh"
+                            android:layout_marginStart="@dimen/_39pxh"
+                            android:layout_marginTop="@dimen/_23pxv"
+                            android:layout_width="@dimen/_22pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_close"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+                        <FrameLayout
+                            android:id="@+id/frameStackarrowdownSixteen"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_197pxv"
+                            android:layout_marginBottom="@dimen/_538pxv"
+                            android:layout_marginEnd="@dimen/_32pxh"
+                            android:layout_marginStart="@dimen/_39pxh"
+                            android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_287pxh">
+                            <FrameLayout
+                                android:id="@+id/frameStackhttpslottief"
+                                android:layout_gravity="bottom|start"
+                                android:layout_height="@dimen/_136pxv"
+                                android:layout_marginEnd="@dimen/_60pxh"
+                                android:layout_marginStart="@dimen/_60pxh"
+                                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_136pxh">
+                                <ImageView
+                                    android:id="@+id/imageHttpslottief"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_136pxh"
+                                    android:layout_width="@dimen/_136pxh"
+                                    android:scaleType="fitXY"
+                                    imageRes="@{@drawable/img_httpslottief_136x136}"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_httpslottief_136x136"/>
+                                <TextView android:ellipsize="end"
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtSelectTime"
+                                    android:layout_gravity="bottom|end"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_15pxv"
+                                    android:layout_marginEnd="@dimen/_17pxh"
+                                    android:layout_marginStart="@dimen/_17pxh"
+                                    android:layout_marginTop="@dimen/_15pxv"
+                                    android:layout_width="match_parent"
+                                    android:singleLine="true"
+                                    android:text="@{yogaProtocolOneVM.yogaProtocolOneModel.txtSelectTime}"
+                                    style="@style/txtPoppinsmedium16_2" tools:text="@string/lbl_select_time"/>
+                            </FrameLayout>
+                            <LinearLayout
+                                android:id="@+id/linearColumnarrowdownSixteen"
+                                android:layout_gravity="top|start"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_width="match_parent" android:orientation="vertical">
+                                <ImageButton
+                                    android:background="@drawable/rectangle_bg_white_a700_radius_12"
+                                    android:id="@+id/btnArrowdownSixteen"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_24pxh"
+                                    android:layout_marginEnd="@dimen/_112pxh"
+                                    android:layout_marginStart="@dimen/_112pxh"
+                                    android:layout_width="@dimen/_24pxh"
+                                    android:paddingHorizontal="@dimen/_5pxh"
+                                    android:paddingVertical="@dimen/_5pxv"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/img_arrowdown" tools:ignore="ContentDescription"/>
+                                <FrameLayout
+                                    android:id="@+id/frameStackellipsethirty"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_102pxv" android:layout_width="@dimen/_287pxh">
+                                    <View
+                                    android:background="@drawable/rectangle_bg_gray_700_7c_radius_143_79"
+                                    android:id="@+id/viewEllipseThirty"
+                                    android:layout_gravity="start"
+                                    android:layout_height="@dimen/_102pxv" android:layout_width="@dimen/_287pxh"/>
+                                    <Spinner
+                                    android:background="@drawable/layer_list_bg_blue_a202_radius_19"
+                                    android:id="@+id/spinnerTimeOne"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_30pxv"
+                                    android:layout_marginEnd="@dimen/_33pxh"
+                                    android:layout_marginStart="@dimen/_29pxh"
+                                    android:layout_marginTop="@dimen/_32pxv"
+                                    android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+                                </FrameLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </ScrollView>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageLineEightyNine"
+            android:layout_gravity="top|end"
+            android:layout_height="1545dp"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_59pxh"
+            android:layout_marginStart="@dimen/_59pxh"
+            android:layout_width="@dimen/_88pxh"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_line89}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_line89"/>
+    </FrameLayout>
+</layout>

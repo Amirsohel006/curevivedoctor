@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Curevive Doctor</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_thu">Thu</string>
+    <string name="lbl_your_schedule">Your schedule</string>
+    <string name="lbl_meal_1">Meal 1</string>
+    <string name="lbl_meal_2">Meal 2</string>
+    <string name="lbl_logout">Logout</string>
+    <string name="lbl_diet">Diet</string>
+    <string name="lbl_recent_search_s">"Recent Search's"</string>
+    <string name="lbl_patients2">Patients </string>
+    <string name="lbl_male_26_yrs">Male , 26 Yrs</string>
+    <string name="lbl_select_chakra">Select Chakra</string>
+    <string name="lbl_we">We</string>
+    <string name="lbl_bronchitis">Bronchitis</string>
+    <string name="lbl_5_255">$ 5,255 </string>
+    <string name="lbl_hypertension">Hypertension</string>
+    <string name="lbl_set">Set</string>
+    <string name="lbl_ex_mbbs">Ex: MBBS</string>
+    <string name="lbl_50">50%</string>
+    <string name="lbl_7_00_pm_7_45_pm">7:00 pm-7:45 pm</string>
+    <string name="lbl_fines">Fines</string>
+    <string name="lbl_herbology2">HERBOLOGY</string>
+    <string name="msg_extra_tips_re">Extra Tips &amp; Remedies</string>
+    <string name="lbl_procedure">Procedure</string>
+    <string name="lbl_add_meal">Add meal</string>
+    <string name="msg_choose_when_you">"Choose when you'll be available for consultations. This will be considered as your working hours in Curevive.Each consultation will be of 20 minutes. You can add multiple time slots per day. Your tasks and consultations will be scheduled for that time. Remember,missing out on consultations or delay in protocol delivery leads to a penalty."</string>
+    <string name="lbl_vijay">Vijay</string>
+    <string name="lbl_supine_to_prone">Supine to prone</string>
+    <string name="lbl_06_12">06.12</string>
+    <string name="lbl_d_r_t">D.R.T</string>
+    <string name="msg_please_input_th">Please input the meal for your patients as directed and specify the time for each meal .To include additional meals in the diet, utilize the \u201cadd meal \u201c choice. </string>
+    <string name="lbl_tu">Tu</string>
+    <string name="msg_b_n_y_s_m_d_nu">B.N.Y.S  M.D nutrition</string>
+    <string name="lbl_enter_meal">Enter meal</string>
+    <string name="msg_online_consulta">Online
+Consultation</string>
+    <string name="lbl_20000">20000</string>
+    <string name="lbl_2300">2300</string>
+    <string name="lbl_accupressure">Accupressure</string>
+    <string name="msg_back_bending_as">Back bending asanas</string>
+    <string name="lbl_platform_fees">Platform fees</string>
+    <string name="lbl_wed2">WED</string>
+    <string name="lbl_kiran">Kiran</string>
+    <string name="lbl_maya">Maya</string>
+    <string name="lbl_30">30%</string>
+    <string name="lbl_thu2">THU</string>
+    <string name="lbl_su">Su</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_version_1_2">Version 1.2.</string>
+    <string name="lbl_mike_mazowski">Mike Mazowski </string>
+    <string name="lbl_th">Th</string>
+    <string name="msg_12_00pm_2_00p">12:00pm - 2:00pm</string>
+    <string name="lbl_amount_set">AMOUNT SET</string>
+    <string name="lbl_20">20</string>
+    <string name="msg_packs_applicati">Packs application </string>
+    <string name="lbl_4_599_00">\u20b9 4,599.00</string>
+    <string name="lbl_23">23</string>
+    <string name="lbl_ex_bengaluru">Ex: Bengaluru</string>
+    <string name="lbl_24">24</string>
+    <string name="lbl_21">21</string>
+    <string name="lbl_22">22</string>
+    <string name="lbl_age">Age*</string>
+    <string name="lbl_27">27</string>
+    <string name="lbl_25">25</string>
+    <string name="msg_choose_from_the">Choose from the options below or customize your own treatment</string>
+    <string name="lbl_experience3">Experience  -</string>
+    <string name="lbl_26">26</string>
+    <string name="lbl_750_00">-750.00</string>
+    <string name="lbl_94_104">94
+
+
+
+104</string>
+    <string name="lbl_sun2">SUN</string>
+    <string name="lbl_sa">Sa</string>
+    <string name="lbl_disease_filter">Disease Filter</string>
+    <string name="lbl_wallet">Wallet</string>
+    <string name="lbl_500">$500</string>
+    <string name="lbl_female">Female</string>
+    <string name="lbl_4_599">\u20b9 4,599</string>
+    <string name="lbl_feedback">Feedback</string>
+    <string name="lbl_submit_the_form">Submit the form</string>
+    <string name="lbl_occupation">Occupation</string>
+    <string name="lbl_ppbs_104">PPBS   -104</string>
+    <string name="lbl_18_31">18.31</string>
+    <string name="msg_i_am_suffering">i am suffering from diebeted from past 8 years .hjsdfhjf fhdkjfh jfadjfhk fjdhakjfh jkdafhkjfh hfadjfha fadhfadl hfdkahfo jfhdajhfa fladkjfhdaj jfjlkjafhadkjl hdajfhkjla
+
+</string>
+    <string name="lbl_chairyoga">CHAIRYOGA</string>
+    <string name="lbl_hydrotherapy2">HYDROTHERAPY</string>
+    <string name="lbl_privacy_policy">Privacy policy</string>
+    <string name="msg_fill_treatment">Fill  treatment card</string>
+    <string name="lbl_view_file">View File</string>
+    <string name="msg_identity_proof">Identity Proof  -</string>
+    <string name="lbl_ra">RA</string>
+    <string name="lbl_slots">Slots</string>
+    <string name="lbl_12_00am">12:00am</string>
+    <string name="lbl_78_kg">78 kg</string>
+    <string name="lbl_photo">Photo *</string>
+    <string name="msg_systolic_dia">Systolic
+
+
+
+Diastolic</string>
+    <string name="lbl_gandalph">Gandalph</string>
+    <string name="lbl_845">845</string>
+    <string name="lbl_00">00</string>
+    <string name="msg_hand_reflexolog">Hand reflexology</string>
+    <string name="lbl_fill_form">Fill Form</string>
+    <string name="lbl_view_demo">View Demo &gt;&gt;</string>
+    <string name="msg_please_choose_t">"Please choose the fees you'll charge patients for specific conditions. Prices range from Curevive's  commission to the maximum charge decided by Curevive. Any amount above the minimum is your profit. Please adjust accordingly."</string>
+    <string name="lbl_11_30_am">11:30 AM</string>
+    <string name="lbl_yoga2">YOGA</string>
+    <string name="lbl_protocols">Protocols</string>
+    <string name="lbl_42_00">+$42.00</string>
+    <string name="lbl_stretching">Stretching</string>
+    <string name="msg_qualification_p">Qualification Proof*</string>
+    <string name="lbl_diastolic">Diastolic</string>
+    <string name="lbl_more">More</string>
+    <string name="lbl_my_code">My Code</string>
+    <string name="msg_custom_diabetes2">Custom diabetes essential oil</string>
+    <string name="lbl_protocol">PROTOCOL</string>
+    <string name="msg_qualification_d">Qualification Details</string>
+    <string name="lbl_settings">Settings</string>
+    <string name="lbl_update">Update</string>
+    <string name="lbl_10000">10000</string>
+    <string name="lbl_diet2">DIET</string>
+    <string name="lbl_mobile_number2">Mobile Number</string>
+    <string name="lbl_your_profit">Your profit</string>
+    <string name="lbl_none">none
+
+</string>
+    <string name="msg_7_00am_8_00_a">7:00AM - 8:00 AM</string>
+    <string name="lbl_tips">TIPS</string>
+    <string name="lbl_asana_1">Asana 1</string>
+    <string name="msg_duration_7_d">Duration -  7 days</string>
+    <string name="lbl_last_name2">Last Name</string>
+    <string name="lbl_asana_3">Asana 3</string>
+    <string name="lbl_asana_2">Asana 2 </string>
+    <string name="msg_enter_weekly_ad">Enter weekly advice </string>
+    <string name="lbl_transactions">Transactions</string>
+    <string name="lbl2">&#1049812;</string>
+    <string name="lbl_bmi">BMI</string>
+    <string name="msg_rate_us_on_app">Rate us on app store</string>
+    <string name="lbl3">****</string>
+    <string name="lbl_first_name">First Name*</string>
+    <string name="lbl_lawren">Lawren</string>
+    <string name="msg_standing_to_sit">Standing to sitting</string>
+    <string name="lbl_2000">-2000</string>
+    <string name="lbl_oa">OA</string>
+    <string name="msg_registration_su">Registration Successful</string>
+    <string name="lbl_off">Off</string>
+    <string name="lbl_webinar">Webinar</string>
+    <string name="lbl_bengaluru">Bengaluru</string>
+    <string name="lbl_acupressure">Acupressure</string>
+    <string name="lbl_4560">4560</string>
+    <string name="lbl_prone_asana">Prone asana</string>
+    <string name="lbl_sat2">SAT</string>
+    <string name="lbl_mo">Mo</string>
+    <string name="lbl_8800">8800</string>
+    <string name="lbl_enter_point">Enter point</string>
+    <string name="msg_forgot_password">Forgot Password ? </string>
+    <string name="msg_08_00am_10_00">08:00am - 10:00am</string>
+    <string name="msg_chakra_meditati">Chakra Meditation</string>
+    <string name="lbl_aroma2">Aroma</string>
+    <string name="lbl_gender2">Gender  -</string>
+    <string name="lbl_allergies">Allergies - </string>
+    <string name="lbl_monthly">Monthly</string>
+    <string name="msg_medical_conditi">Medical condition -
+</string>
+    <string name="lbl_email_id">Email ID*</string>
+    <string name="msg_pls_take_a_look">Pls take a look at the images.</string>
+    <string name="lbl_asthma">Asthma</string>
+    <string name="lbl_info">Info</string>
+    <string name="lbl_alphange">Alphange</string>
+    <string name="lbl_albert_bell">Albert Bell</string>
+    <string name="lbl_constipation">Constipation</string>
+    <string name="lbl_english_hindi">English, hindi
+
+</string>
+    <string name="lbl_pending">Pending</string>
+    <string name="lbl_weekly_insights">Weekly insights</string>
+    <string name="lbl_shakti">Shakti</string>
+    <string name="lbl_29_july_00_00">29 July 00:00</string>
+    <string name="lbl_hyperlipidemia">Hyperlipidemia</string>
+    <string name="lbl_raise_a_query">Raise a query</string>
+    <string name="lbl_osteoarthritis">Osteoarthritis</string>
+    <string name="lbl_standing_asanas">Standing Asanas</string>
+    <string name="lbl_hydro">Hydro</string>
+    <string name="lbl_4300">4300</string>
+    <string name="lbl_fri">Fri</string>
+    <string name="lbl_experience2">Experience</string>
+    <string name="lbl_language">
+Language - </string>
+    <string name="lbl_invite_a_friend">Invite a Friend</string>
+    <string name="lbl_aroma">AROMA</string>
+    <string name="msg_www_curevive_in">www.curevive.in/earn/doctorprogram/danalevi</string>
+    <string name="msg_withdrawable_ba">Withdrawable balance</string>
+    <string name="lbl_write_here2">Write here..</string>
+    <string name="lbl_tue">Tue</string>
+    <string name="lbl_16_04">16.04</string>
+    <string name="lbl_case_history">Case history</string>
+    <string name="lbl_100">$100</string>
+    <string name="lbl_104">104</string>
+    <string name="lbl_referal">Referal</string>
+    <string name="lbl_106">106</string>
+    <string name="lbl_march_31_2022">March 31,2022</string>
+    <string name="lbl_today">Today</string>
+    <string name="lbl_11_30am2">11:30am</string>
+    <string name="lbl_chats">Chats</string>
+    <string name="lbl_select_time">Select Time</string>
+    <string name="lbl_add_account">Add Account</string>
+    <string name="lbl_city3">City -</string>
+    <string name="lbl_city2">City  -</string>
+    <string name="lbl_repeat">REPEAT</string>
+    <string name="lbl">*</string>
+    <string name="msg_we_will_review">We will review your details and reach you soon</string>
+    <string name="lbl_online">Online</string>
+    <string name="lbl_82_106">82
+
+
+
+106</string>
+    <string name="msg_fill_treatment2">Fill Treatment Card</string>
+    <string name="lbl_1">1</string>
+    <string name="lbl_2">2</string>
+    <string name="lbl_3">3</string>
+    <string name="lbl_5">5</string>
+    <string name="msg_male_25_diabet">Male 25  Diabetes </string>
+    <string name="lbl_patient_file">Patient File</string>
+    <string name="msg_i_m_happy_this">I\u2018m happy this anime has such grea...</string>
+    <string name="lbl_released_amount">Released amount</string>
+    <string name="lbl_200">$200</string>
+    <string name="lbl_login">Login</string>
+    <string name="msg_that_s_very_nic">That\u2019s very nice place! you guys made a very good decision. Can\u2019t wait to go on vacation!</string>
+    <string name="msg_confirm_and_sub">Confirm and Submit</string>
+    <string name="lbl_all">All</string>
+    <string name="lbl_other">Other</string>
+    <string name="lbl_shakti_26_yrs">Shakti , 26 Yrs</string>
+    <string name="msg_back_bending_a">Back bending  asanasa</string>
+    <string name="lbl_4500">4500</string>
+    <string name="lbl_6800">6800</string>
+    <string name="msg_kindly_make_sur">Kindly make sure your choice for the acupressure , hand reflexology and foot reflexology points with careful consideration.Ensuring they are the most suitable points taoilred to the specific requirements of the patients</string>
+    <string name="msg_follow_the_prov">Follow the provided Sequence when inputting the asana ;if asana isnt needed, choose the \u2018none\u2019 option. The video will play according to the following sequence. Suryanamaskara can be added anywhere you find necessary.</string>
+    <string name="lbl_female_26_yrs">Female , 26 Yrs</string>
+    <string name="lbl_visa">Visa</string>
+    <string name="lbl_1000">$1000</string>
+    <string name="lbl_ronald_mccoy">Ronald Mccoy</string>
+    <string name="lbl_experience">Experience*</string>
+    <string name="lbl_code">Code</string>
+    <string name="lbl_m">M</string>
+    <string name="lbl_5000">-5000</string>
+    <string name="msg_live_consultati2">Live consultation</string>
+    <string name="lbl_s">S</string>
+    <string name="lbl_t">T</string>
+    <string name="lbl_w">W</string>
+    <string name="lbl_about">About</string>
+    <string name="lbl_state">State*</string>
+    <string name="lbl_fr">Fr</string>
+    <string name="lbl_rating_562">Rating (562)</string>
+    <string name="lbl_choose_type">Choose type</string>
+    <string name="msg_withdrawablebal">Withdrawablebalance</string>
+    <string name="lbl_thyroid">Thyroid</string>
+    <string name="lbl_250_00">+250.00</string>
+    <string name="lbl_male">Male</string>
+    <string name="lbl_diabetes">Diabetes</string>
+    <string name="lbl_this_week"> this week</string>
+    <string name="lbl_hydrotherapy">Hydrotherapy</string>
+    <string name="lbl_you_gained">You gained </string>
+    <string name="lbl_username">Username</string>
+    <string name="lbl_a">A</string>
+    <string name="lbl_sun">Sun</string>
+    <string name="lbl_25_years">25 Years</string>
+    <string name="lbl_f">F</string>
+    <string name="lbl_in_progress">In Progress</string>
+    <string name="lbl_g">G</string>
+    <string name="lbl_33_5">33.5%</string>
+    <string name="lbl_last_name">Last Name*</string>
+    <string name="lbl_gender">Gender*</string>
+    <string name="lbl_daily_vitals">Daily vitals</string>
+    <string name="lbl_aroma_therapy">Aroma Therapy</string>
+    <string name="lbl_002">00%</string>
+    <string name="lbl_monday">Monday</string>
+    <string name="msg_diabetes_premiu">Diabetes premium
+                      Obesity common
+
+</string>
+    <string name="lbl_fill_protocol">Fill protocol</string>
+    <string name="lbl_hdfc_bank">HDFC Bank</string>
+    <string name="lbl_enter_user_name">Enter User Name</string>
+    <string name="lbl_asit_dessai">Asit Dessai</string>
+    <string name="msg_prone_to_sittin">Prone to sitting</string>
+    <string name="lbl_95_080_30">$95,080.30</string>
+    <string name="lbl_cards">Cards</string>
+    <string name="lbl_yesterday">Yesterday</string>
+    <string name="lbl_banglore"> Banglore
+</string>
+    <string name="lbl_diabetic_points">Diabetic points</string>
+    <string name="msg_low_calorie_die">Low calorie diet</string>
+    <string name="msg_write_a_message">Write a message...</string>
+    <string name="msg_qualification">Qualification  -</string>
+    <string name="msg_terms_and_condi">Terms and conditions</string>
+    <string name="lbl_apply">Apply</string>
+    <string name="lbl_city">City*</string>
+    <string name="lbl_total_income">Total income</string>
+    <string name="lbl_daniel_clark">Daniel Clark </string>
+    <string name="lbl_complete">Complete</string>
+    <string name="lbl_ashish_b">Ashish B</string>
+    <string name="lbl_priya">Priya</string>
+    <string name="lbl_analysis">Analysis</string>
+    <string name="lbl_fbs_91">FBS     - 91</string>
+    <string name="msg_invite_a_friend">invite a friend to make this app a sucess</string>
+    <string name="lbl_qualification">Qualification*</string>
+    <string name="lbl_none2">None</string>
+    <string name="lbl_3_2552">$ 3,255 </string>
+    <string name="lbl_fbs_ppbs">FBS
+
+
+
+PPBS</string>
+    <string name="lbl_yes">Yes
+
+</string>
+    <string name="lbl_id_card">ID Card*</string>
+    <string name="msg_confirm_details">Confirm Details &amp; Submit</string>
+    <string name="lbl_file">File</string>
+    <string name="lbl_mixed"> - Mixed
+
+</string>
+    <string name="lbl_task">Task</string>
+    <string name="lbl_skip">Skip &gt;&gt;</string>
+    <string name="lbl_submit">Submit</string>
+    <string name="msg_sunday_27_june">Sunday, 27 June 2021</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_50000">50000</string>
+    <string name="lbl_accupressure2">ACCUPRESSURE</string>
+    <string name="lbl_patient_vitals">Patient Vitals.</string>
+    <string name="lbl_available">Available</string>
+    <string name="lbl_max_amount">MAX AMOUNT</string>
+    <string name="lbl_2_32">2/3</string>
+    <string name="lbl_join">Join</string>
+    <string name="msg_qualification_p2">Qualification Proof  -</string>
+    <string name="lbl_thanks_dude">Thanks dude &#128521;</string>
+    <string name="lbl_6_00_am_7_00_am">6:00 am-7:00 am</string>
+    <string name="lbl_my_link">My Link</string>
+    <string name="lbl_4_599_0">4,599.0</string>
+    <string name="msg_live_consultati">Live Consultation</string>
+    <string name="lbl_supine_asana">Supine asana</string>
+    <string name="msg_acupressure_poi">Acupressure point</string>
+    <string name="msg_yes_that_s_gon">Yes, that\u2019s gonna work, hopefully. </string>
+    <string name="lbl_prone_to_supine">Prone to Supine</string>
+    <string name="lbl_platform_fees3">Platform
+fees</string>
+    <string name="lbl_platform_fees2">PLATFORM FEES</string>
+    <string name="msg_under_gone_natu">Under gone naturopathy treatment previously  - </string>
+    <string name="msg_hello_guys_we2">Hello guys, we have discussed about ...</string>
+    <string name="lbl_02_0_am">02:0 AM</string>
+    <string name="lbl_10_00am_11_30am">10:00am-11:30am</string>
+    <string name="lbl_patients">Patients</string>
+    <string name="lbl_pranayama_3">Pranayama 3</string>
+    <string name="lbl_pranayama_2">Pranayama 2 </string>
+    <string name="lbl_height">Height</string>
+    <string name="lbl_next">Next &gt;&gt;</string>
+    <string name="lbl_harley_quin">Harley Quin</string>
+    <string name="lbl_pranayama_1">Pranayama 1</string>
+    <string name="lbl_4_999_0">4,999.0</string>
+    <string name="msg_select_asana_t">Select  asana type and
+repeat same for all.</string>
+    <string name="lbl_referal_income">Referal income</string>
+    <string name="lbl_obesity">Obesity</string>
+    <string name="msg_naturopathy_doc">Naturopathy Doctor - GOA</string>
+    <string name="lbl_view_edit">View/Edit</string>
+    <string name="msg_custom_diabetes">Custom diabetes capsules</string>
+    <string name="lbl_week_1">Week 1</string>
+    <string name="lbl_tip_1">Tip 1</string>
+    <string name="lbl_set_timings">Set Timings</string>
+    <string name="lbl_age2">Age  -</string>
+    <string name="msg_duration_30_m">Duration : 30 mins</string>
+    <string name="lbl_mark_spence">Mark Spence</string>
+    <string name="lbl_pcod">PCOD</string>
+    <string name="lbl_abdul_khan">Abdul Khan</string>
+    <string name="lbl_price">Price</string>
+    <string name="lbl_accounts">Accounts</string>
+    <string name="lbl_herbology">Herbology</string>
+    <string name="lbl_wed">Wed</string>
+    <string name="lbl_3_255">\u20b9 3,255 </string>
+    <string name="lbl_week_2">WEEK 2</string>
+    <string name="lbl_week_3">Week 3</string>
+    <string name="lbl_week_4">Week 4</string>
+    <string name="lbl_select_disease">Select Disease</string>
+    <string name="lbl_up_next">Up Next</string>
+    <string name="lbl_supervisor_1">Supervisor 1</string>
+    <string name="lbl_relaxation">Relaxation</string>
+    <string name="msg_you_gained_42">You gained +$42.00 this week</string>
+    <string name="msg_enter_text_here">Enter text here or select from the options</string>
+    <string name="lbl_tue2">TUE</string>
+    <string name="lbl_fri2">FRI</string>
+    <string name="lbl_systolic">Systolic
+</string>
+    <string name="lbl_enter_asana">Enter Asana</string>
+    <string name="lbl_weight">Weight</string>
+    <string name="lbl_package">Package - </string>
+    <string name="lbl_contact_details">Contact Details</string>
+    <string name="lbl_fbs">FBS
+</string>
+    <string name="lbl_mon2">MON</string>
+    <string name="msg_search_for_pati">Search for Patients</string>
+    <string name="lbl_view_all">View All</string>
+    <string name="lbl_pranayama">Pranayama</string>
+    <string name="lbl_09_20">09:20</string>
+    <string name="lbl_3_4">+3.4%</string>
+    <string name="lbl_email_id2">Email ID</string>
+    <string name="msg_go_back_to_m">&lt;&lt; Go back to main page</string>
+    <string name="lbl_time">Time</string>
+    <string name="msg_slots_updated_s">Slots Updated Successfully</string>
+    <string name="lbl_sitting_asanas">Sitting Asanas</string>
+    <string name="lbl_7_00_am">7:00 AM </string>
+    <string name="msg_treatment_refer">Treatment reference.</string>
+    <string name="lbl_mathematics">Mathematics</string>
+    <string name="lbl_reports">Reports -
+
+
+
+
+
+
+</string>
+    <string name="lbl_detox">Detox</string>
+    <string name="msg_in_the_above_ex">In the above example platform fee is 4500, and the maximum price is 10000. If you set the price at 8800, your profit in this case would be 4300 . Feel free to adjust as per your needs.</string>
+    <string name="lbl_mon">Mon</string>
+    <string name="msg_sitting_to_supi">Sitting to supine</string>
+    <string name="msg">.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   .  .  .  .  .  .  .  .</string>
+    <string name="msg_patients_treate">Patients treated</string>
+    <string name="lbl_naseer">Naseer</string>
+    <string name="lbl_doctor_s_notes">Doctor\u2019s notes</string>
+    <string name="lbl_treatment_card">Treatment Card</string>
+    <string name="lbl_dr_rayan_shaik">Dr. Rayan Shaik</string>
+    <string name="lbl_locked_amount">Locked amount</string>
+    <string name="msg_chapter_1_intr">Chapter 1: Introduction</string>
+    <string name="lbl_my_banks">My Banks</string>
+    <string name="lbl_identity_proof">Identity Proof*</string>
+    <string name="lbl_total_income2">Total  income</string>
+    <string name="lbl_first_name2">First Name</string>
+    <string name="lbl_about_us">About us</string>
+    <string name="msg_male_25_diabe">Male 25 - Diabetes </string>
+    <string name="lbl_0_1">-0.1%</string>
+    <string name="msg_hello_guys_we">Hello guys, we have discussed about post-corona vacation plan and our decision is to go to Bali. We will have a very big party after this corona ends! These are some images about our destination</string>
+    <string name="lbl_0_3">0/3</string>
+    <string name="lbl_5_11_ft">5\u201911 Ft</string>
+    <string name="lbl_94">94
+</string>
+    <string name="lbl_220_342_76">220,342.76</string>
+    <string name="lbl_95">95%</string>
+    <string name="lbl_sat">Sat</string>
+    <string name="msg_balance_availab">Balance available</string>
+    <string name="lbl_earnings">Earnings</string>
+    <string name="lbl_name">Name</string>
+    <string name="lbl_live_yoga">Live yoga</string>
+    <string name="lbl_hyperlipidaemia">Hyperlipidaemia</string>
+    <string name="lbl_yoga">Yoga</string>
+    <string name="msg_see_prices_fixe">See Prices Fixed</string>
+    <string name="msg_personal_detail">Personal Details</string>
+    <string name="lbl_82">82
+</string>
+    <string name="lbl_week_22">Week 2</string>
+    <string name="lbl_hearly_quin">Hearly Quin</string>
+    <string name="msg_schedule_comple">Schedule completion</string>
+    <string name="msg_foot_reflexolog">Foot reflexology</string>
+    <string name="lbl_lawyer"> - Lawyer
+
+</string>
+    <string name="msg_enter_your_quer">Enter your query</string>
+    <string name="lbl_write_here">Write here...</string>
+    <string name="lbl_lee_williamson">Lee Williamson</string>
+    <string name="lbl_mobile_number">Mobile Number*</string>
+    <string name="lbl_75">75%</string>
+    <string name="lbl_ppbs">PPBS</string>
+    <string name="msg_please_specify">Please specify the appropriate dosage and timing based on the patients condition, ensuring their safety and well-being. Most common dosage is 1- 2 capsules a day in morning or evening with luke warm water.</string>
+    <string name="lbl_education">Education*</string>
+    <string name="lbl_still_confused">Still confused?</string>
+    <string name="lbl_2_years">2 Years</string>
+    <string name="msg_city_banglore">City - Banglore
+
+Language - English, hindi
+
+Occupation - Lawyer
+
+Diet - Mixed
+
+Under gone naturopathy treatment previously  - Yes
+
+Package - Diabetes premium
+                      Obesity common
+
+Medical condition -
+i am suffering from diebeted from past 8 years .hjsdfhjf fhdkjfh jfadjfhk fjdhakjfh jkdafhkjfh hfadjfha fadhfadl hfdkahfo jfhdajhfa fladkjfhdaj jfjlkjafhadkjl hdajfhkjla 
+
+Allergies - none
+
+Reports - 
+
+
+
+
+
+
+
+
+</string>
+    <string name="lbl_dr_ashish_b">Dr. Ashish B</string>
+    <string name="lbl_full_name">Full Name  -</string>
+    <string name="lbl_recent_patients">Recent Patients</string>
+    <string name="msg_please_enter_valid_text">Please enter valid text</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

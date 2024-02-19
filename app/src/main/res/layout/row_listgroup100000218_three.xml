@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listgroup100000218ThreeRowModel" type="com.curevivedoctor.app.modules.profileprice.data.model.Listgroup100000218ThreeRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowgroup100000218Three"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroup100000218Three"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_7pxv"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_6pxv" android:singleLine="true"
+            android:text="@{listgroup100000218ThreeRowModel.txtGroup100000218Three}"
+            style="@style/txtSolidRounded_4" tools:text="@string/lbl_asthma"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroup100000218One"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_7pxv"
+            android:paddingStart="@dimen/_12pxh"
+            android:paddingTop="@dimen/_6pxv" android:singleLine="true"
+            android:text="@{listgroup100000218ThreeRowModel.txtGroup100000218One}"
+            style="@style/txtSolidRounded_4" tools:text="@string/lbl_bronchitis"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroup100000219One"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_weight="0.33" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingStart="@dimen/_22pxh"
+            android:paddingTop="@dimen/_8pxv" android:singleLine="true"
+            android:text="@{listgroup100000218ThreeRowModel.txtGroup100000219One}"
+            style="@style/txtSolidRounded_4" tools:text="@string/lbl_thyroid"/>
+    </LinearLayout>
+</layout>

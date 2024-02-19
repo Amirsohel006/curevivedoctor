@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listwebinarRowModel" type="com.curevivedoctor.app.modules.workshops.data.model.ListwebinarRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowwebinar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_10">
+        <TextView android:ellipsize="end" android:id="@+id/txtWebinar"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginStart="@dimen/_30pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_weight="0.26" android:layout_width="0dp"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@{listwebinarRowModel.txtWebinar}"
+            style="@style/txtIntersemibold14" tools:text="@string/lbl_webinar"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTimeOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_weight="0.44" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listwebinarRowModel.txtTimeOne}"
+            style="@style/txtAssistantsemibold13_1" tools:text="@string/lbl_7_00_pm_7_45_pm"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroupFifty"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_weight="0.3" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingStart="@dimen/_18pxh"
+            android:paddingTop="@dimen/_2pxv" android:singleLine="true"
+            android:text="@{listwebinarRowModel.txtGroupFifty}"
+            style="@style/txtGradientRounded" tools:text="@string/lbl_join"/>
+    </LinearLayout>
+</layout>

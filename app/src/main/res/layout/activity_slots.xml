@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="slotsVM" type="com.curevivedoctor.app.modules.slots.data.viewmodel.SlotsVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnlinefour"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_48pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStackrectangle130"
+            android:layout_height="@dimen/_215pxv" android:layout_width="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                app:contentInsetStart="0dp" style="@style/groupStyle_3">
+                <LinearLayout android:id="@+id/linearColumnrectangle130"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <ImageView android:gravity="start"
+                        android:id="@+id/imageRectangle130"
+                        android:layout_height="@dimen/_38pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_rectangle130"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle130"/>
+                    <LinearLayout android:gravity="end"
+                        android:id="@+id/linearRowupdate"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_14pxh"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/linearRowarrowleft"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_8pxv"
+                            android:layout_marginTop="@dimen/_3pxv"
+                            android:layout_weight="0.48"
+                            android:layout_width="0dp" android:orientation="horizontal">
+                            <ImageView android:id="@+id/imageArrowleft"
+                                android:layout_height="@dimen/_20pxh"
+                                android:layout_marginBottom="@dimen/_3pxv"
+                                android:layout_marginTop="@dimen/_5pxv"
+                                android:layout_width="@dimen/_20pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_arrowleft_white_a700_20x20"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_white_a700_20x20"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtSlots"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_20pxh"
+                                android:layout_weight="0.75"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{slotsVM.slotsModel.txtSlots}"
+                                style="@style/txtRobotoSerifrobotoserifsemibold24" tools:text="@string/lbl_slots"/>
+                        </LinearLayout>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnUpdate"
+                            android:layout_height="@dimen/_41pxv"
+                            android:layout_marginStart="@dimen/_137pxh"
+                            android:layout_width="@dimen/_108pxh"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:paddingEnd="@dimen/_30pxh"
+                            android:paddingStart="@dimen/_30pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_update"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRounded_3" tools:text="@string/lbl_update"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout android:id="@+id/linearColumngroup100000217"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_26">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowgroup100000217"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_21pxv"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius_2">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGroup100000217"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.14"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_25pxv"
+                        android:paddingStart="@dimen/_8pxh"
+                        android:paddingTop="@dimen/_25pxv"
+                        android:singleLine="true"
+                        android:text="@{slotsVM.slotsModel.txtGroup100000217}"
+                        style="@style/txtSolidRounded_5" tools:text="@string/lbl_mon2"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGroup100000217One"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_weight="0.14"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_25pxv"
+                        android:paddingStart="@dimen/_10pxh"
+                        android:paddingTop="@dimen/_25pxv"
+                        android:singleLine="true"
+                        android:text="@{slotsVM.slotsModel.txtGroup100000217One}"
+                        style="@style/txtRoundedOutline_5" tools:text="@string/lbl_tue2"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGroup100000217Two"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_weight="0.14"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_25pxv"
+                        android:paddingStart="@dimen/_8pxh"
+                        android:paddingTop="@dimen/_25pxv"
+                        android:singleLine="true"
+                        android:text="@{slotsVM.slotsModel.txtGroup100000217Two}"
+                        style="@style/txtRoundedOutline_5" tools:text="@string/lbl_wed2"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGroup100000217Three"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_weight="0.14"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_25pxv"
+                        android:paddingStart="@dimen/_9pxh"
+                        android:paddingTop="@dimen/_25pxv"
+                        android:singleLine="true"
+                        android:text="@{slotsVM.slotsModel.txtGroup100000217Three}"
+                        style="@style/txtRoundedOutline_5" tools:text="@string/lbl_thu2"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGroup100000217Four"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_weight="0.14"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_25pxv"
+                        android:paddingStart="@dimen/_13pxh"
+                        android:paddingTop="@dimen/_25pxv"
+                        android:singleLine="true"
+                        android:text="@{slotsVM.slotsModel.txtGroup100000217Four}"
+                        style="@style/txtRoundedOutline_5" tools:text="@string/lbl_fri2"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtGroup100000217Five"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_weight="0.14"
+                        android:layout_width="0dp"
+                        android:paddingBottom="@dimen/_25pxv"
+                        android:paddingStart="@dimen/_11pxh"
+                        android:paddingTop="@dimen/_25pxv"
+                        android:singleLine="true"
+                        android:text="@{slotsVM.slotsModel.txtGroup100000217Five}"
+                        style="@style/txtRoundedOutline_5" tools:text="@string/lbl_sat2"/>
+                    <FrameLayout android:id="@+id/frameStacksun"
+                        android:layout_height="@dimen/_66pxv"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_width="@dimen/_48pxh" style="@style/groupStylecornerRadius_2">
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtSUN"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_25pxv"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_25pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{slotsVM.slotsModel.txtSUN}"
+                            style="@style/txtRobotoSerifrobotoserifregular12_1" tools:text="@string/lbl_sun2"/>
+                        <View
+                            android:background="@drawable/rectangle_border_white_a700_83_radius_10"
+                            android:id="@+id/viewRectangle6551"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_66pxh" android:layout_width="@dimen/_48pxh"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearSlots"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_75pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <View android:background="@color/bluegray_902"
+                android:id="@+id/lineLineFour"
+                android:layout_height="@dimen/_1pxv" android:layout_width="@dimen/_360pxh"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerSlots"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_18pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_21pxh}" tools:itemCount="8" tools:listitem="@layout/row_slots"/>
+            <View android:background="@color/bluegray_902"
+                android:id="@+id/lineLineTwelve"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_12pxv" android:layout_width="@dimen/_360pxh"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

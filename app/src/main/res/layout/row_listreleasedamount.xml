@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listreleasedamountRowModel" type="com.curevivedoctor.app.modules.walletearnings.data.model.ListreleasedamountRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowzipcode"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:id="@+id/linearRowreleasedamount"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.74" android:layout_width="0dp" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtReleasedamount"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{listreleasedamountRowModel.txtReleasedamount}"
+                style="@style/txtPoppinsregular16_8" tools:text="@string/lbl_released_amount"/>
+            <ImageView android:id="@+id/imageInbox"
+                android:layout_height="@dimen/_15pxh"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="@dimen/_15pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_inbox_gray_907"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_inbox_gray_907"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtZipcodeOne"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_87pxh"
+            android:layout_weight="0.26" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listreleasedamountRowModel.txtZipcodeOne}"
+            style="@style/txtPoppinsmedium18_1" tools:text="@string/lbl_50000"/>
+    </LinearLayout>
+</layout>

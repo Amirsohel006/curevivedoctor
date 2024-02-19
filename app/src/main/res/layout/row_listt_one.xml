@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listtOneRowModel" type="com.curevivedoctor.app.modules.schedulelist.data.model.ListtOneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end" android:id="@+id/txtTOne"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.32" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listtOneRowModel.txtTOne}"
+            style="@style/txtPoppinsmedium12_4" tools:text="@string/lbl_t"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtF"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_44pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_weight="0.32" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listtOneRowModel.txtF}"
+            style="@style/txtPoppinsmedium12_4" tools:text="@string/lbl_f"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtSOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginStart="@dimen/_43pxh"
+            android:layout_weight="0.36" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listtOneRowModel.txtSOne}"
+            style="@style/txtPoppinsmedium12_4" tools:text="@string/lbl_s"/>
+    </LinearLayout>
+</layout>

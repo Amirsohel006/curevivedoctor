@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listellipse399TwoRowModel" type="com.curevivedoctor.app.modules.dietprotocol.data.model.Listellipse399TwoRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackentermeal"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <FrameLayout android:id="@+id/frameStackellipse399Two"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_48pxv"
+            android:layout_marginEnd="@dimen/_4pxh"
+            android:layout_width="@dimen/_319pxh" style="@style/groupStylewhite_A700_7ccornerRadius">
+            <ImageView android:id="@+id/imageEllipse399Two"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_25pxh"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="@dimen/_25pxh"
+                android:scaleType="centerCrop" circular="@{true}"
+                imageRes="@{@drawable/img_ellipse399}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse399"/>
+            <ImageView android:id="@+id/imageArrow278Two"
+                android:layout_gravity="bottom|end"
+                android:layout_height="@dimen/_1pxh"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="@dimen/_2pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_arrow278"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_arrow278"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:gravity="top|start"
+            android:id="@+id/txtEntermealSix"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listellipse399TwoRowModel.txtEntermealSix}"
+            style="@style/txtPoppinsmedium18" tools:text="@string/lbl_enter_meal"/>
+    </FrameLayout>
+</layout>

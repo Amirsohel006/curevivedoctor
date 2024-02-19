@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="settingsRowModel" type="com.curevivedoctor.app.modules.settings.data.model.SettingsRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowinbox"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylecornerRadius_14">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_light_blue_a700_radius_4"
+            android:id="@+id/btnInbox"
+            android:layout_height="@dimen/_32pxh"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="@dimen/_32pxh"
+            android:paddingHorizontal="@dimen/_7pxh"
+            android:paddingVertical="@dimen/_7pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_inbox_white_a700" tools:ignore="ContentDescription"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnabout"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginEnd="@dimen/_224pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_weight="0.63" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtAbout"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.0" android:singleLine="true"
+                android:text="@{settingsRowModel.txtAbout}"
+                style="@style/txtPoppinsmedium16_5" tools:text="@string/lbl_about"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtVersionCounter"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.0" android:singleLine="true"
+                android:text="@{settingsRowModel.txtVersionCounter}"
+                style="@style/txtPoppinsregular10_1" tools:text="@string/lbl_version_1_2"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

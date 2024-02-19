@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginScreenVM" type="com.curevivedoctor.app.modules.loginscreen.data.viewmodel.LoginScreenVM"/>
+    </data>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLoginScreen"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        style="@style/groupStylewhite_A700">
+
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:fillViewport="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <FrameLayout
+            android:gravity="start"
+            android:id="@+id/frameStackellipse547"
+            android:layout_height="@dimen/_391pxv"
+            android:layout_width="match_parent">
+            <ImageView
+                android:id="@+id/imageEllipse547"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/background"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/background"/>
+
+<!--            <FrameLayout-->
+<!--                android:id="@+id/frameStack7removebgprev"-->
+<!--                android:layout_gravity="top|start"-->
+<!--                android:layout_height="@dimen/_256pxv"-->
+<!--                android:layout_marginBottom="@dimen/_44pxv"-->
+<!--                android:layout_marginTop="@dimen/_44pxv"-->
+<!--                android:layout_width="match_parent">-->
+
+<!--&lt;!&ndash;                <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/linearColumn7removebgprev"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="bottom|center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginEnd="@dimen/_51pxh"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginStart="@dimen/_51pxh"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="@dimen/_10pxv"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:orientation="vertical">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/image7removebgprev"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_gravity="center_horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="@dimen/_160pxh"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginEnd="@dimen/_48pxh"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_marginStart="@dimen/_48pxh"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="@dimen/_159pxh"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:scaleType="fitXY"&ndash;&gt;-->
+<!--&lt;!&ndash;                        imageRes="@{@drawable/img_7removebgprev}"&ndash;&gt;-->
+<!--&lt;!&ndash;                        tools:ignore="ContentDescription"&ndash;&gt;-->
+<!--&lt;!&ndash;                        tools:src="@drawable/img_7removebgprev"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:gravity="start"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/image8removebgprev"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="@dimen/_49pxh"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:scaleType="fitXY"&ndash;&gt;-->
+<!--&lt;!&ndash;                        imageRes="@{@drawable/img_8removebgprev}"&ndash;&gt;-->
+<!--&lt;!&ndash;                        tools:ignore="ContentDescription"&ndash;&gt;-->
+<!--&lt;!&ndash;                        tools:src="@drawable/img_8removebgprev"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                </LinearLayout>&ndash;&gt;-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageVectorNine"-->
+<!--                    android:layout_gravity="top|start"-->
+<!--                    android:layout_height="@dimen/_135pxh"-->
+<!--                    android:layout_marginBottom="@dimen/_10pxv"-->
+<!--                    android:layout_marginEnd="@dimen/_10pxh"-->
+<!--                    android:layout_width="@dimen/_90pxh"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    cornerRadius="@{@dimen/_10pxh}"-->
+<!--                    imageRes="@{@drawable/img_vector9}"-->
+<!--                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector9"/>-->
+<!--                <ImageView android:id="@+id/imageVectorTen"-->
+<!--                    android:layout_gravity="bottom|end"-->
+<!--                    android:layout_height="@dimen/_126pxh"-->
+<!--                    android:layout_marginBottom="@dimen/_24pxv"-->
+<!--                    android:layout_marginStart="@dimen/_10pxh"-->
+<!--                    android:layout_marginTop="@dimen/_24pxv"-->
+<!--                    android:layout_width="@dimen/_73pxh"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    cornerRadius="@{@dimen/_10pxh}"-->
+<!--                    imageRes="@{@drawable/img_vector10}"-->
+<!--                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector10"/>-->
+<!--            </FrameLayout>-->
+        </FrameLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnusername"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtUsername"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{loginScreenVM.loginScreenModel.txtUsername}"
+                style="@style/txt" tools:text="@string/lbl_username"/>
+            <EditText
+                android:background="@drawable/rectangle_border_gray_700_radius_9"
+                android:ellipsize="end"
+                android:hint="@string/lbl_enter_user_name"
+                android:id="@+id/etGroup145" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_22pxh"
+                android:paddingTop="@dimen/_14pxv"
+                android:singleLine="true"
+                android:text="@={loginScreenVM.loginScreenModel.etGroup145Value}"
+                android:textColorHint="@color/gray_500"
+                style="@style/etRoundedOutline_2" tools:ignore="Autofill"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnpassword"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPassword"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{loginScreenVM.loginScreenModel.txtPassword}"
+                style="@style/txt" tools:text="@string/lbl_password"/>
+            <EditText
+                android:background="@drawable/rectangle_border_gray_700_radius_9"
+                android:ellipsize="end"
+                android:hint="@string/lbl_enter_user_name"
+                android:id="@+id/etGroup146" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_22pxh"
+                android:paddingTop="@dimen/_14pxv"
+                android:singleLine="true"
+                android:text="@={loginScreenVM.loginScreenModel.etGroup146Value}"
+                android:textColorHint="@color/gray_500"
+                style="@style/etRoundedOutline_2" tools:ignore="Autofill"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/txtLanguage"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{loginScreenVM.loginScreenModel.txtLanguage}"
+            style="@style/txtPoppinsmedium14" textUnderline="true" tools:text="@string/msg_forgot_password"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnlogin"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnLogin"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_14pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_login"
+                android:textAllCaps="false"
+                style="@style/btnGradientRounded" tools:text="@string/lbl_login"/>
+        </LinearLayout>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGobacktom"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{loginScreenVM.loginScreenModel.txtGobacktom}"
+            style="@style/txtAssistantromanregular16"
+            textUnderline="true" tools:text="@string/msg_go_back_to_m"/>
+
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

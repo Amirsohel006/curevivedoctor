@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.curevivedoctor.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".appcomponents.di.MyApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".modules.homecontainer.HomeContainerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".modules.dietprotocol.ui.DietProtocolActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".modules.search.ui.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.frame.ui.FrameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.schedulelist.ui.ScheduleListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.profilebarcode.ui.ProfileBarCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.chats.ui.ChatsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.registerscreentwo.ui.RegisterScreenTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.welcomescreensfive.ui.WelcomeScreensFiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.accupressureprotocol.ui.AccupressureProtocolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.assetgenerated.ui.AssetGeneratedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.registerscreen.ui.RegisterScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.frame3659.ui.Frame3659Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.registerscreenone.ui.RegisterScreenOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.hydrotherapyprotocol.ui.HydrotherapyprotocolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.yogaprotocolfour.ui.YogaProtocolFourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.frametwentynine.ui.FrameTwentynineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.frame3676.ui.Frame3676Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.querypopup.ui.QueryPopUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.walletearnings.ui.WalletEarningsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.wallettransactions.ui.WalletTransactionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.walletfines.ui.WalletFinesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".modules.loginscreen.ui.LoginScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".modules.wallet.ui.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.patientprofile.ui.PatientProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.yogaprotocolthree.ui.YogaProtocolThreeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.profileinfo.ui.ProfileInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.aromaprotocol.ui.AromaProtocolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.profilecodelink.ui.ProfileCodeLinkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.settings.ui.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.patientfilenotes.ui.PatientFileNotesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.profileprice.ui.ProfilePriceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.patientfile.ui.PatientFileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.patientprofiletwo.ui.PatientProfileTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.herbologyprotocol.ui.HerbologyprotocolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.assetgeneratedtwo.ui.AssetGeneratedTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.yogaprotocoltwo.ui.YogaProtocolTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.profiletimeone.ui.ProfileTimeOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.home.ui.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.profilepriceone.ui.ProfilePriceOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.vitalhypertension.ui.VitalHypertensionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.slots.ui.SlotsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.patientchatcontainer.ui.PatientChatContainerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.yogaprotocol.ui.YogaProtocolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.patientprofileone.ui.PatientProfileOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.profiletime.ui.ProfileTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.workshops.ui.WorkshopsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.yogaprotocolone.ui.YogaProtocolOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.chairyogaprotocol.ui.ChairyogaProtocolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.vitaldiabities.ui.VitalDiabitiesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.patientslist.ui.PatientsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.assetgeneratedone.ui.AssetGeneratedOneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.tips.ui.TipsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.treatmentcard.ui.TreatmentCardActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

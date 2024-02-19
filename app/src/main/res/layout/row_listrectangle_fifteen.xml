@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectangleFifteenRowModel" type="com.curevivedoctor.app.modules.frame.data.model.ListrectangleFifteenRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackrectangleFourTwo"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_260pxh">
+        <LinearLayout android:id="@+id/linearColumnrectangleFifteen"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_6">
+            <FrameLayout android:id="@+id/frameStackrectangleFifteen"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_45pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_4pxh"
+                android:layout_marginTop="@dimen/_16pxv" android:layout_width="@dimen/_150pxh">
+                <ImageView android:id="@+id/imageRectangleFifteen"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_32pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_32pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle_32x32"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_32x32"/>
+                <ImageView android:id="@+id/imageRectangleOneTwo"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_43pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_65pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle_43x65"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_43x65"/>
+                <ImageView android:id="@+id/imageRectangleTwoTwo"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_22pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="@dimen/_94pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle_22x94"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_22x94"/>
+                <ImageView android:id="@+id/imageRectangleThreeTwo"
+                    android:layout_gravity="bottom|end"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_84pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle_1"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_1"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/imageRectangleFourTwo"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_21pxh"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="@dimen/_155pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle_2"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_2"/>
+            <FrameLayout android:id="@+id/frameStackrectangleFiveTwo"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_28pxv"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_102pxh">
+                <ImageView android:id="@+id/imageRectangleFiveTwo"
+                    android:layout_gravity="top|center"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_width="@dimen/_102pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle_3"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_3"/>
+                <ImageView android:id="@+id/imageRectangleSixTwo"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_86pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_rectangle_4"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_4"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearColumnrectangleSevenTwo"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_31pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="wrap_content"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_6">
+            <ImageView android:id="@+id/imageRectangleSevenTwo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_12pxh"
+                android:layout_marginBottom="@dimen/_32pxv"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_32pxv"
+                android:layout_width="@dimen/_42pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_rectangle_5"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle_5"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

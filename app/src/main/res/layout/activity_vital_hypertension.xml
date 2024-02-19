@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="vitalHypertensionVM" type="com.curevivedoctor.app.modules.vitalhypertension.data.viewmodel.VitalHypertensionVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumntime"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_1pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="center_vertical"
+                android:id="@+id/linearHeader"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylelight_blue_A700">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTime"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginStart="@dimen/_234pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_weight="0.56"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{vitalHypertensionVM.vitalHypertensionModel.txtTime}"
+                    style="@style/txtRubikmedium14" tools:text="@string/lbl_09_20"/>
+                <ImageView android:id="@+id/imageContrast"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="@dimen/_14pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_contrast"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_contrast"/>
+                <ImageView android:id="@+id/imageUpload"
+                    android:layout_height="@dimen/_7pxh"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:layout_marginEnd="@dimen/_27pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="@dimen/_17pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_upload"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_upload"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearVitalHyperte"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:id="@+id/linearRowtoday"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylewhite_A700">
+                <LinearLayout android:id="@+id/linearRowarrowleft"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8pxv"
+                    android:layout_marginStart="@dimen/_19pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowleft"
+                        android:layout_height="@dimen/_16pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_width="@dimen/_16pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowleft_bluegray_600"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft_bluegray_600"/>
+                    <ImageButton
+                        android:background="@drawable/rectangle_gradient_s_light_blue_a700_f7_c_light_blue_a700_3d_e_light_blue_a700_26_radius_18"
+                        android:id="@+id/btnAirplane"
+                        android:layout_height="@dimen/_37pxh"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_width="@dimen/_36pxh"
+                        android:paddingHorizontal="@dimen/_3pxh"
+                        android:paddingVertical="@dimen/_3pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_airplane" tools:ignore="ContentDescription"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtHypertension"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_weight="0.68"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{vitalHypertensionVM.vitalHypertensionModel.txtHypertension}"
+                        style="@style/txtAssistantbold18" tools:text="@string/lbl_hypertension"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnToday"
+                    android:layout_height="@dimen/_31pxv"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_70pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="@dimen/_75pxh"
+                    android:paddingBottom="@dimen/_5pxv"
+                    android:paddingEnd="@dimen/_15pxh"
+                    android:paddingStart="@dimen/_15pxh"
+                    android:paddingTop="@dimen/_5pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_today"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_today"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRows"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylewhite_2">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerLists"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_weight="0.42"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_1pxh}" tools:itemCount="2" tools:listitem="@layout/row_lists1"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnw"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_weight="0.14"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius_15">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtW"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{vitalHypertensionVM.vitalHypertensionModel.txtW}"
+                        style="@style/txtPoppinsmedium12_3" tools:text="@string/lbl_w"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtTwentyFour"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_6pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{vitalHypertensionVM.vitalHypertensionModel.txtTwentyFour}"
+                        style="@style/txtPoppinssemibold16_2" tools:text="@string/lbl_24"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerListtOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_21pxh"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_weight="0.43"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_1pxh}" tools:itemCount="2" tools:listitem="@layout/row_listt_one1"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerListellipse544"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_12pxh}" tools:itemCount="8" tools:listitem="@layout/row_listellipse544"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

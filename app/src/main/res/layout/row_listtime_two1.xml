@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listtimeTwo1RowModel" type="com.curevivedoctor.app.modules.profiletimeone.data.model.ListtimeTwo1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowtime"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end" android:id="@+id/txtTimeTwo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_weight="0.69" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{listtimeTwo1RowModel.txtTimeTwo}"
+            style="@style/txtRobotoromanregular16" tools:text="@string/msg_7_00am_8_00_a"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumngroup302"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_112pxh"
+            android:layout_weight="0.31" android:layout_width="0dp" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackgroup302"
+                android:layout_height="@dimen/_26pxv" android:layout_width="@dimen/_56pxh">
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchMaterialGroup302"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_2pxh" android:layout_width="wrap_content"/>
+                <View
+                    android:background="@drawable/rectangle_bg_green_a700_0c_radius_13"
+                    android:id="@+id/viewEllipseSixOne"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_26pxh"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtOffOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listtimeTwo1RowModel.txtOffOne}"
+                style="@style/txtRobotoSerifrobotoserifregular12" tools:text="@string/lbl_off"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="queryPopUpVM" type="com.curevivedoctor.app.modules.querypopup.data.viewmodel.QueryPopUpVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameQuerypopup"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnenteryourquer"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginStart="@dimen/_71pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearRowenteryourquer"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtEnteryourquer"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.88"
+                        android:layout_width="0dp"
+                        android:letterSpacing="0.0"
+                        android:singleLine="true"
+                        android:text="@{queryPopUpVM.queryPopUpModel.txtEnteryourquer}"
+                        style="@style/txtPoppinsmedium18_1" tools:text="@string/msg_enter_your_quer"/>
+                    <ImageView android:id="@+id/imageSearch"
+                        android:layout_height="@dimen/_20pxh"
+                        android:layout_marginBottom="@dimen/_2pxv"
+                        android:layout_marginStart="@dimen/_48pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="@dimen/_20pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_search_gray_904"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_search_gray_904"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <FrameLayout android:id="@+id/frameStackwritehere"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_291pxv"
+                android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_292pxh">
+                <LinearLayout android:id="@+id/linearColumn"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStyleindigo_51cornerRadius">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnwritehere"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_9pxv"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_7pxh"
+                        android:layout_marginTop="@dimen/_40pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_12">
+                        <TextView android:ellipsize="end"
+                            android:gravity="start"
+                            android:id="@+id/txtWritehere"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_146pxv"
+                            android:layout_marginEnd="@dimen/_21pxh"
+                            android:layout_marginStart="@dimen/_21pxh"
+                            android:layout_marginTop="@dimen/_12pxv"
+                            android:layout_width="match_parent"
+                            android:letterSpacing="0.0"
+                            android:singleLine="true"
+                            android:text="@{queryPopUpVM.queryPopUpModel.txtWritehere}"
+                            style="@style/txtPoppinsregular14" tools:text="@string/lbl_write_here"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageImageOne"
+                    android:layout_gravity="top|center"
+                    android:layout_height="@dimen/_90pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_98pxh"
+                    android:layout_marginStart="@dimen/_98pxh"
+                    android:layout_width="@dimen/_91pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_image1}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image1"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnsubmit"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnSubmit"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_submit"
+                    android:textAllCaps="false"
+                    style="@style/btnGradientRounded" tools:text="@string/lbl_submit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

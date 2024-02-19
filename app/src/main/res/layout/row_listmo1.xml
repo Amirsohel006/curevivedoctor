@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listmo1RowModel" type="com.curevivedoctor.app.modules.patientprofile.data.model.Listmo1RowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnmo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:orientation="vertical">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal" android:id="@+id/txtMo"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4pxh"
+            android:layout_marginStart="@dimen/_4pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.03" android:singleLine="true"
+            android:text="@{listmo1RowModel.txtMo}"
+            android:textAllCaps="true" style="@style/txtPoppinsregular8" tools:text="@string/lbl_mo"/>
+        <ImageView android:id="@+id/imageUIProgressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_78pxh"
+            android:layout_marginEnd="@dimen/_7pxh"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="@dimen/_7pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_uiprogressbar"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_uiprogressbar"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtThreeHundredThirtyFive"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listmo1RowModel.txtThreeHundredThirtyFive}"
+            android:textAllCaps="true"
+            style="@style/txtPoppinsregular8_1" tools:text="@string/lbl_33_5"/>
+    </LinearLayout>
+</layout>
