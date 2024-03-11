@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        style="@style/groupStylebluegray_901">
+        style="@style/groupStylebluegray_9011">
         <LinearLayout android:id="@+id/linearRowsettings"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_59pxv"
@@ -212,7 +212,7 @@
                                 android:text="@string/lbl_my_banks"
                                 style="@style/txtInterregular23"
                                 tools:text="@string/lbl_my_banks"/>
-                            <EditText
+                            <TextView
                                 android:background="@drawable/rectangle_bg_blue_503_radius_10"
                                 android:drawablePadding="@dimen/_6pxh"
                                 android:drawableStart="@drawable/img_close"

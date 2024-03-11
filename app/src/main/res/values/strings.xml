@@ -423,6 +423,7 @@ repeat same for all.</string>
     <string name="lbl_reports">Reports -
 
 
+         <string name="msg_choose_when_you_ll">"Choose when you'll be available for consultations. This will be considered as your working hours in Curevive.Each consultation will be of 20 minutes. You can add multiple time slots per day. Your tasks and consultations will be scheduled for that time. Remember,missing out on consultations or delay in protocol delivery leads to a penalty."</string>
 
 
 
@@ -484,25 +485,6 @@ repeat same for all.</string>
     <string name="lbl_2_years">2 Years</string>
     <string name="msg_city_banglore">City - Banglore
 
-Language - English, hindi
-
-Occupation - Lawyer
-
-Diet - Mixed
-
-Under gone naturopathy treatment previously  - Yes
-
-Package - Diabetes premium
-                      Obesity common
-
-Medical condition -
-i am suffering from diebeted from past 8 years .hjsdfhjf fhdkjfh jfadjfhk fjdhakjfh jkdafhkjfh hfadjfha fadhfadl hfdkahfo jfhdajhfa fladkjfhdaj jfjlkjafhadkjl hdajfhkjla 
-
-Allergies - none
-
-Reports - 
-
-
 
 
 
@@ -514,6 +496,22 @@ Reports -
     <string name="lbl_full_name">Full Name  -</string>
     <string name="lbl_recent_patients">Recent Patients</string>
     <string name="msg_please_enter_valid_text">Please enter valid text</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_take_your_clinic">Take Your Clinic Online</string>
+    <string name="msg_register_for_curevive">Register For Curevive</string>
+    <string name="lbl_or">or</string>
+    <string name="or">or</string>
+    <string name="lbl_continue">Continue</string>
+    <string name="msg_choose_your_profession">Choose Your Profession</string>
+    <string name="lbl_back">Back</string>
+    <string name="lbl_doctor">Doctor</string>
+    <string name="lbl_yoga_trainer">Yoga Trainer</string>
+    <string name="lbl_reki_master">Reki Master</string>
+    <string name="lbl_kabir_singh">Kabir Singh</string>
+    <string name="msg_slots_availability">Slot Availability</string>
+    <string name="msg_choose_when_you_ll">Choose when you\'ll be available for consultations. This will be considered as your working hours in Curevive.Each consultation will be of 20 minutes. You can add multiple time slots per day. Your tasks and consultations will be scheduled for that time. Remember,missing out on consultations or delay in protocol delivery leads to a penalty.</string>
+    <string name="lbl_slot_1">Slot 1</string>
+    <string name="lbl_upto">upto</string>
+    <string name="lbl_slot_2">Slot 2</string>
+    <string name="lbl_add_slots">Add Slots</string>
 </resources>

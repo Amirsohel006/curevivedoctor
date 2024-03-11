@@ -12,8 +12,9 @@
             android:layout_marginTop="@dimen/_13pxv"
             android:layout_weight="0.69" android:layout_width="0dp"
             android:singleLine="true"
-            android:text="@{listtimeTwoRowModel.txtTimeTwo}"
-            style="@style/txtRobotoromanregular16" tools:text="@string/msg_7_00am_8_00_a"/>
+            android:text="@string/msg_7_00am_8_00_a"
+            style="@style/txtRobotoromanregular16"
+            tools:text="@string/msg_7_00am_8_00_a"/>
         <LinearLayout android:gravity="start"
             android:id="@+id/linearColumngroup286"
             android:layout_height="wrap_content"
@@ -42,8 +43,9 @@
                 android:layout_marginTop="@dimen/_1pxv"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
-                android:text="@{listtimeTwoRowModel.txtOffOne}"
-                style="@style/txtRobotoSerifrobotoserifregular12" tools:text="@string/lbl_off"/>
+                android:text="@string/lbl_off"
+                style="@style/txtRobotoSerifrobotoserifregular12"
+                tools:text="@string/lbl_off"/>
         </LinearLayout>
     </LinearLayout>
 </layout>

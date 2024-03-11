@@ -11,17 +11,29 @@
 
 
 
-        <FrameLayout android:id="@+id/frameStackdescription"
-            android:layout_height="@dimen/_707pxv"
-            android:layout_marginTop="@dimen/_9pxv" android:layout_width="match_parent">
-            <LinearLayout android:id="@+id/linearColumndescription"
-                android:layout_gravity="center"
+        <FrameLayout
+            android:id="@+id/frameStackdescription"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="match_parent">
+
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearColumndescription"
+                android:layout_gravity="start"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_16pxh"
                 android:layout_marginStart="@dimen/_16pxh"
                 android:layout_width="match_parent"
-                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
-                <TextView android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@drawable/back_for_profile">
+                <TextView android:gravity="start"
                     android:id="@+id/txtDescription"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_11pxh"
@@ -31,7 +43,7 @@
                     android:letterSpacing="0.0"
                     android:lineSpacingExtra="@dimen/_8pxh"
                     android:text="@string/msg_please_choose_t"
-                    style="@style/txtPoppinsregular12"
+                    style="@style/txtPoppinsregular10"
                     tools:text="@string/msg_please_choose_t"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtLowprices"
@@ -59,7 +71,7 @@
                         android:layout_width="0dp"
                         android:singleLine="true"
                         android:text="@string/lbl_select_disease"
-                        style="@style/txtPoppinsmedium20"
+                        style="@style/txtPoppinssemibold20_1"
                         tools:text="@string/lbl_select_disease"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtOne"
@@ -93,7 +105,7 @@
                         android:layout_marginBottom="@dimen/_1pxv"
                         android:layout_width="match_parent"
                         android:orientation="vertical"
-                        style="@style/groupStyleblue_A700_63cornerRadius">
+                        style="@style/groupStyleblue_A700_63cornerRadius1">
                         <LinearLayout android:gravity="start"
                             android:id="@+id/linearRowgroup100000219"
                             android:layout_height="wrap_content"
@@ -111,8 +123,9 @@
                                 android:paddingStart="@dimen/_20pxh"
                                 android:paddingTop="@dimen/_6pxv"
                                 android:singleLine="true"
-                                android:text="@{profilePriceVM.profilePriceModel.txtGroup100000219}"
-                                style="@style/txtSolidRounded" tools:text="@string/lbl_diabetes"/>
+                                android:text="@string/lbl_diabetes"
+                                style="@style/txtSolidRounded"
+                                tools:text="@string/lbl_diabetes"/>
                             <TextView android:ellipsize="end"
                                 android:id="@+id/txtGroup100000218"
                                 android:layout_height="wrap_content"
@@ -124,10 +137,10 @@
                                 android:paddingStart="@dimen/_9pxh"
                                 android:paddingTop="@dimen/_8pxv"
                                 android:singleLine="true"
-                                android:text="@{profilePriceVM.profilePriceModel.txtGroup100000218}"
-                                style="@style/txtSolidRounded_1" tools:text="@string/lbl_hypertension"/>
+                                android:text="@string/lbl_hypertension"
+                                style="@style/txtSolidRounded_1"
+                                tools:text="@string/lbl_hypertension"/>
                             <EditText
-                                android:background="@drawable/rectangle_bg_blue_a700_63_radius_17_5"
                                 android:ellipsize="end"
                                 android:hint="@string/lbl_obesity"
                                 android:id="@+id/etGroup100000218One"
@@ -142,9 +155,10 @@
                                 android:paddingStart="@dimen/_13pxh"
                                 android:paddingTop="@dimen/_8pxv"
                                 android:singleLine="true"
-                                android:text="@={profilePriceVM.profilePriceModel.etGroup100000218OneValue}"
+                                android:text="@string/lbl_obesity"
                                 android:textColorHint="@color/black_901"
-                                style="@style/etSolidRounded" tools:ignore="Autofill"/>
+                                style="@style/etSolidRounded1"
+                                tools:ignore="Autofill"/>
                         </LinearLayout>
                         <LinearLayout
                             android:id="@+id/linearRowgroup100000218Two"
@@ -154,7 +168,6 @@
                             android:layout_marginTop="@dimen/_8pxv"
                             android:layout_width="match_parent" android:orientation="horizontal">
                             <EditText
-                                android:background="@drawable/rectangle_bg_blue_a700_63_radius_17_5"
                                 android:ellipsize="end"
                                 android:hint="@string/lbl_hyperlipidaemia"
                                 android:id="@+id/etGroup100000218Two"
@@ -168,9 +181,10 @@
                                 android:paddingStart="@dimen/_24pxh"
                                 android:paddingTop="@dimen/_8pxv"
                                 android:singleLine="true"
-                                android:text="@={profilePriceVM.profilePriceModel.etGroup100000218TwoValue}"
+                                android:text="@string/lbl_hyperlipidaemia"
                                 android:textColorHint="@color/black_901"
-                                style="@style/etSolidRounded" tools:ignore="Autofill"/>
+                                style="@style/etSolidRounded1"
+                                tools:ignore="Autofill"/>
 
                             <androidx.appcompat.widget.AppCompatButton
                                 android:ellipsize="end"
@@ -187,7 +201,8 @@
                                 android:singleLine="true"
                                 android:text="@string/lbl_oa"
                                 android:textAllCaps="false"
-                                style="@style/btnSolidRounded" tools:text="@string/lbl_oa"/>
+                                style="@style/btnSolidRounded1"
+                                tools:text="@string/lbl_oa"/>
 
                             <androidx.appcompat.widget.AppCompatButton
                                 android:ellipsize="end"
@@ -204,7 +219,8 @@
                                 android:singleLine="true"
                                 android:text="@string/lbl_detox"
                                 android:textAllCaps="false"
-                                style="@style/btnSolidRounded" tools:text="@string/lbl_detox"/>
+                                style="@style/btnSolidRounded1"
+                                tools:text="@string/lbl_detox"/>
                         </LinearLayout>
                         <androidx.recyclerview.widget.RecyclerView
                             android:gravity="center_horizontal"
@@ -218,7 +234,7 @@
                             android:orientation="vertical"
                             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                             itemSpace="@{@dimen/_8pxh}"
-                            tools:itemCount="2"
+                            tools:itemCount="1"
                             tools:listitem="@layout/row_listgroup100000218_three"/>
                     </LinearLayout>
                 </FrameLayout>
@@ -231,19 +247,21 @@
                     android:layout_marginTop="@dimen/_12pxv"
                     android:layout_width="wrap_content"
                     android:singleLine="true"
-                    android:text="@{profilePriceVM.profilePriceModel.txtZeroOne}"
-                    style="@style/txtRobotoromansemibold16" tools:text="@string/lbl_diabetes"/>
+                    android:text="@string/lbl_diabetes"
+                    style="@style/txtRobotoromansemibold16"
+                    tools:text="@string/lbl_diabetes"/>
                 <FrameLayout android:id="@+id/frameStackrectangle"
                     android:layout_gravity="center_horizontal"
-                    android:layout_height="@dimen/_49pxv"
+                    android:layout_height="@dimen/_39pxv"
                     android:layout_marginEnd="@dimen/_4pxh"
                     android:layout_marginStart="@dimen/_11pxh"
                     android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_310pxh">
                     <FrameLayout android:id="@+id/frameRange"
                         android:layout_gravity="bottom|center"
-                        android:layout_height="@dimen/_23pxv"
+                        android:layout_height="@dimen/_28pxv"
                         android:layout_marginEnd="@dimen/_8pxh"
-                        android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_301pxh">
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_301pxh">
                         <View
                             android:background="@drawable/rectangle_bg_gray_100_border_bluegray_101_radius_4"
                             android:id="@+id/viewRectangle"
@@ -285,7 +303,7 @@
 
                         <ImageView android:id="@+id/imagePlay"
                             android:layout_gravity="end"
-                            android:layout_height="@dimen/_23pxh"
+                            android:layout_height="@dimen/_28pxh"
                             android:layout_marginEnd="@dimen/_59pxh"
                             android:layout_marginStart="@dimen/_59pxh"
                             android:layout_width="@dimen/_24pxh"
@@ -321,9 +339,10 @@
                             android:letterSpacing="0.03"
                             android:lineSpacingExtra="@dimen/_8pxh"
                             android:singleLine="true"
-                            android:text="@{profilePriceVM.profilePriceModel.txtZipcode}"
+                            android:text="@string/lbl_4500"
                             android:textAllCaps="true"
-                            style="@style/txtRobotomedium12" tools:text="@string/lbl_4500"/>
+                            style="@style/txtRobotomedium12"
+                            tools:text="@string/lbl_4500"/>
                     </FrameLayout>
                     <FrameLayout
                         android:id="@+id/frameStackfavoriteTwo"
@@ -352,27 +371,30 @@
                             android:letterSpacing="0.03"
                             android:lineSpacingExtra="@dimen/_8pxh"
                             android:singleLine="true"
-                            android:text="@{profilePriceVM.profilePriceModel.txtZipcodeOne}"
+                            android:text="@string/lbl_10000"
                             android:textAllCaps="true"
-                            style="@style/txtRobotomedium12" tools:text="@string/lbl_10000"/>
+                            style="@style/txtRobotomedium12"
+                            tools:text="@string/lbl_10000"/>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout
                     android:id="@+id/frameStackcombinedshape"
                     android:layout_gravity="end"
-                    android:layout_height="@dimen/_26pxv"
+                    android:layout_height="@dimen/_36pxv"
                     android:layout_marginEnd="@dimen/_65pxh"
                     android:layout_marginStart="@dimen/_65pxh"
-                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_65pxh">
-                    <ImageView android:id="@+id/imageCombinedShape"
-                        android:layout_gravity="center"
-                        android:layout_height="@dimen/_26pxh"
-                        android:layout_marginEnd="@dimen/_6pxh"
-                        android:layout_marginStart="@dimen/_5pxh"
-                        android:layout_width="@dimen/_54pxh"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/img_combinedshape"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_combinedshape"/>
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_65pxh">
+<!--                    <ImageView android:id="@+id/imageCombinedShape"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_height="@dimen/_26pxh"-->
+<!--                        android:layout_marginEnd="@dimen/_6pxh"-->
+<!--                        android:layout_marginStart="@dimen/_5pxh"-->
+<!--                        android:layout_width="@dimen/_54pxh"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/img_combinedshape"-->
+<!--                        tools:ignore="ContentDescription"-->
+<!--                        tools:src="@drawable/img_combinedshape"/>-->
                     <TextView android:ellipsize="end"
                         android:gravity="top|center"
                         android:id="@+id/txtZipcodeTwo"
@@ -384,9 +406,10 @@
                         android:letterSpacing="0.03"
                         android:lineSpacingExtra="@dimen/_6pxh"
                         android:singleLine="true"
-                        android:text="@{profilePriceVM.profilePriceModel.txtZipcodeTwo}"
+                        android:text="@string/lbl_6800"
                         android:textAllCaps="true"
-                        style="@style/txtRobotomedium14_1" tools:text="@string/lbl_6800"/>
+                        style="@style/txtRobotomedium14_1"
+                        tools:text="@string/lbl_6800"/>
                 </FrameLayout>
                 <LinearLayout android:gravity="start"
                     android:id="@+id/linearRowzeroTwo"
@@ -401,8 +424,9 @@
                         android:layout_weight="0.57"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{profilePriceVM.profilePriceModel.txtZeroTwo}"
-                        style="@style/txtRobotoromanregular14" tools:text="@string/lbl_platform_fees"/>
+                        android:text="@string/lbl_platform_fees"
+                        style="@style/txtRobotoromanregular14"
+                        tools:text="@string/lbl_platform_fees"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtZeroThree"
                         android:layout_height="wrap_content"
@@ -412,8 +436,9 @@
                         android:layout_weight="0.43"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{profilePriceVM.profilePriceModel.txtZeroThree}"
-                        style="@style/txtRobotoromanregular14" tools:text="@string/lbl_your_profit"/>
+                        android:text="@string/lbl_your_profit"
+                        style="@style/txtRobotoromanregular14"
+                        tools:text="@string/lbl_your_profit"/>
                 </LinearLayout>
                 <LinearLayout android:gravity="start"
                     android:id="@+id/linearRow4500"
@@ -437,8 +462,10 @@
                         android:singleLine="true"
                         android:text="@string/lbl_4500"
                         android:textAllCaps="true"
-                        style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_4500"/>
-                    <TextView android:ellipsize="end"
+                        style="@style/btnSolidRoundedOutline"
+                        tools:text="@string/lbl_4500"/>
+                    <TextView
+                        android:ellipsize="end"
                         android:id="@+id/txtZipcodeThree"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_76pxh"
@@ -451,9 +478,10 @@
                         android:paddingStart="@dimen/_4pxh"
                         android:paddingTop="@dimen/_6pxv"
                         android:singleLine="true"
-                        android:text="@{profilePriceVM.profilePriceModel.txtZipcodeThree}"
+                        android:text="@string/lbl_2300"
                         android:textAllCaps="true"
-                        style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_2300"/>
+                        style="@style/txtSolidRoundedOutline"
+                        tools:text="@string/lbl_2300"/>
                 </LinearLayout>
                 <FrameLayout android:id="@+id/frameStackapply"
                     android:layout_gravity="center_horizontal"
@@ -494,9 +522,13 @@
                             android:singleLine="true"
                             android:text="@string/lbl_apply"
                             android:textAllCaps="false"
-                            style="@style/btnGradientRounded" tools:text="@string/lbl_apply"/>
+                            style="@style/btnGradientRounded"
+                            tools:text="@string/lbl_apply"/>
                     </LinearLayout>
                 </FrameLayout>
             </LinearLayout>
+            </ScrollView>
+
+
         </FrameLayout>
 </FrameLayout>

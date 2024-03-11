@@ -25,7 +25,7 @@ private const val ARG_PARAM2 = "param2"
 
 private lateinit var recyclerView: RecyclerView
 private lateinit var recyclerView1: RecyclerView
-private lateinit var recyclerView2: RecyclerView
+lateinit var recyclerView2: RecyclerView
 /**
  * A simple [Fragment] subclass.
  * Use the [HomeFragment.newInstance] factory method to
@@ -37,6 +37,8 @@ class HomeFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

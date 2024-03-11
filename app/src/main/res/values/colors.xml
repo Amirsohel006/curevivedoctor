@@ -31,6 +31,7 @@
   <color name="gray_402">#bdbdbd</color>
   <color name="gray_403">#c9c9c9</color>
   <color name="gray_400">#bababa</color>
+  <color name="blue_gray_200">#bcc1cd</color>
   <color name="gray_401">#c1c1c1</color>
   <color name="bluegray_900_cc">#cc1e163e</color>
   <color name="blue_A700_19">#190062ff</color>
@@ -199,4 +200,14 @@
   <color name="bluegray_902">#343434</color>
   <color name="light_blue_A700_bc">#bc037bfe</color>
   <color name="bluegray_901">#333333</color>
+  <color name="indigo_600">#2a51ab</color>
+  <color name="blue_gray_100_01">#d0d0d0</color>
+  <color name="statusbar">#0591FF</color>
+  <color name="statusbarwalle">#072146</color>
+  <color name="blue_gray_800">#324f5d</color>
+  <color name="gray_500_03">#979797</color>
+  <color name="blue_gray_800_02">#414d55</color>
+  <color name="white_A700_01">#ffffff</color>
+  <color name="black_900_5b">#5b000000</color>
+  <color name="blue_gray_800_01">#324f5e</color>
 </resources>

@@ -25,7 +25,7 @@ class StudioBookong1ActivityPagerAdapter(
                 listOf(MyApp.getInstance().resources.getString(R.string.lbl_info),MyApp.getInstance().resources.getString(R.string.lbl_price),MyApp.getInstance().resources.getString(R.string.lbl_time),MyApp.getInstance().resources.getString(R.string.lbl_code))
 
         val viewPages: List<Fragment> =
-                listOf(InfoFragment(),PriceFragment(),InfoFragment(),CodeFragment())
+                listOf(InfoFragment(),PriceFragment(),TimeFragment(),CodeFragment())
 
     }
 }

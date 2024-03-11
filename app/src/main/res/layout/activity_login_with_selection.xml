@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLoginScreenTwo"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    style="@style/groupStylewhite_A700"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@+id/frameStackvector9thi"
+        android:layout_gravity="start"
+        android:layout_height="@dimen/_130pxv" android:layout_width="@dimen/_90pxh">
+        <ImageView android:id="@+id/imageVector9thirtyon"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_130pxh"
+            android:layout_width="@dimen/_90pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/back"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/back"/>
+        <TextView android:ellipsize="end"
+            android:gravity="top|start"
+            android:id="@+id/txtBack"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5pxh"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/lbl_back"
+            style="@style/txtRoundedMplus1cmedium121"
+            tools:text="@string/lbl_back"/>
+    </FrameLayout>
+    <TextView android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:id="@+id/txtChooseyour"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:text="@string/msg_choose_your_profession"
+        style="@style/txtPoppinssemibold20_2"
+        tools:text="@string/msg_choose_your_profession"/>
+    <LinearLayout android:id="@+id/linearColumn"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_20pxh"
+        android:layout_marginStart="@dimen/_20pxh"
+        android:layout_marginTop="@dimen/_43pxv"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="@dimen/_20pxh"
+            android:id="@+id/linearColumndoctor"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_86pxh"
+            android:layout_marginStart="@dimen/_86pxh"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_31pxh"
+            android:paddingStart="@dimen/_31pxh"
+            android:paddingTop="@dimen/_18pxv">
+            <ImageView android:id="@+id/imageImage"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_78pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_78pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/doctor"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/doctor"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDoctor"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_112pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@string/lbl_doctor"
+                style="@style/txtPoppinsregular16"
+                tools:text="@string/lbl_doctor"/>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowyogatrainer"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                app:cardCornerRadius="@dimen/_20pxh"
+                android:gravity="center"
+                android:id="@+id/linearColumnyogatrain"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/_144pxh"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_21pxh"
+                android:paddingStart="@dimen/_21pxh"
+                android:paddingTop="@dimen/_13pxv" style="@style/groupStylewhite_A700cornerRadius">
+                <ImageView android:id="@+id/imageImageOne"
+                    android:layout_height="@dimen/_95pxh"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="@dimen/_95pxh"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/yoga"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/yoga"/>
+
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtYogatrainer"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginTop="@dimen/_112pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/lbl_yoga_trainer"
+                    style="@style/txtPoppinsregular16"
+                    tools:text="@string/lbl_yoga_trainer"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="@dimen/_20pxh"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/linearColumnrekimaste"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18pxh"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_144pxh"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_26pxh"
+                android:paddingStart="@dimen/_26pxh"
+                android:paddingTop="@dimen/_18pxv"
+                style="@style/groupStylecornerRadius">
+
+                <ImageView
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/imageImageTwo"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_90pxh"
+                    android:layout_width="@dimen/_90pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/reki"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/reki"/>
+
+                <TextView
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtRekimaster"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginTop="@dimen/_112pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/lbl_reki_master"
+                    style="@style/txtPoppinsregular16"
+                    tools:text="@string/lbl_reki_master"/>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:ellipsize="end" android:gravity="center"
+        android:id="@+id/btnContinue"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5pxv"
+        android:layout_marginEnd="@dimen/_16pxh"
+        android:layout_marginStart="@dimen/_16pxh"
+        android:layout_marginTop="@dimen/_93pxv"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_14pxv"
+        android:paddingEnd="@dimen/_30pxh"
+        android:paddingStart="@dimen/_30pxh"
+        android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+        android:text="@string/lbl_continue"
+        android:textAllCaps="false"
+        style="@style/btnGradientRounded"
+        tools:text="@string/lbl_continue"/>
+</LinearLayout>

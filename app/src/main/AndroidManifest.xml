@@ -16,14 +16,40 @@
         android:theme="@style/Theme.MyApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".modules.rekipateintlist.RakiPateintList"
+            android:exported="false" />
+        <activity
+            android:name=".modules.patentList.pateintListForSetting"
+            android:exported="false" />
+        <activity
+            android:name=".modules.loginforyoga.LoginForYoga"
+            android:exported="false" />
+        <activity
+            android:name=".modules.LoginScreenForReki"
+            android:exported="false" />
+        <activity
+            android:name=".modules.loginwithselection.LoginWithSelection"
+            android:exported="true" />
+        <activity
+            android:name=".modules.MainLoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".modules.homecontainer.HomeContainerActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".modules.rekihomecontainer.RekiHomeContainer"
             android:exported="false" />
         <activity
             android:name=".modules.dietprotocol.ui.DietProtocolActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name=".modules.search.ui.SearchActivity"
             android:screenOrientation="portrait" />
@@ -84,19 +110,11 @@
         <activity
             android:name=".modules.walletfines.ui.WalletFinesActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".modules.loginscreen.ui.LoginScreenActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:exported="true"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".modules.wallet.ui.WalletActivity"
             android:screenOrientation="portrait" />

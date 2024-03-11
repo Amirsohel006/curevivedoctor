@@ -14,8 +14,9 @@
             android:paddingBottom="@dimen/_7pxv"
             android:paddingStart="@dimen/_19pxh"
             android:paddingTop="@dimen/_6pxv" android:singleLine="true"
-            android:text="@{listgroup100000218ThreeRowModel.txtGroup100000218Three}"
-            style="@style/txtSolidRounded_4" tools:text="@string/lbl_asthma"/>
+            android:text="@string/lbl_asthma"
+            style="@style/etSolidRounded1"
+            tools:text="@string/lbl_asthma"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtGroup100000218One"
             android:layout_height="wrap_content"
@@ -25,8 +26,9 @@
             android:paddingBottom="@dimen/_7pxv"
             android:paddingStart="@dimen/_12pxh"
             android:paddingTop="@dimen/_6pxv" android:singleLine="true"
-            android:text="@{listgroup100000218ThreeRowModel.txtGroup100000218One}"
-            style="@style/txtSolidRounded_4" tools:text="@string/lbl_bronchitis"/>
+            android:text="@string/lbl_bronchitis"
+            style="@style/etSolidRounded1"
+            tools:text="@string/lbl_bronchitis"/>
         <TextView android:ellipsize="end"
             android:id="@+id/txtGroup100000219One"
             android:layout_height="wrap_content"
@@ -36,7 +38,8 @@
             android:paddingBottom="@dimen/_5pxv"
             android:paddingStart="@dimen/_22pxh"
             android:paddingTop="@dimen/_8pxv" android:singleLine="true"
-            android:text="@{listgroup100000218ThreeRowModel.txtGroup100000219One}"
-            style="@style/txtSolidRounded_4" tools:text="@string/lbl_thyroid"/>
+            android:text="@string/lbl_thyroid"
+            style="@style/etSolidRounded1"
+            tools:text="@string/lbl_thyroid"/>
     </LinearLayout>
 </layout>

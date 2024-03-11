@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".modules.MainLoginActivity">
+
+
+    <LinearLayout android:id="@+id/linearWelcomeScreens"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/_16pxh"
+        android:paddingStart="@dimen/_16pxh" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_241pxh"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_width="@dimen/_200pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_0918_1_31_group"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_0918_1_31_group"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtTakeyourclinico"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@string/msg_take_your_clinic"
+            style="@style/txtPoppinsbold181"
+            tools:text="@string/msg_take_your_clinic"/>
+
+<!--        <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator-->
+<!--            android:id="@+id/indicatorPagerindicator"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_128pxh"-->
+<!--            android:layout_marginTop="@dimen/_55pxv"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            app:drawable_normal="@drawable/indicator_unselected_bg_blue_gray_100_radius_8"-->
+<!--            app:drawable_selected="@drawable/indicator_selected_bg_blue_500_radius_8"-->
+<!--            app:indicator_size="@dimen/_9pxh" app:indicator_spacing="@dimen/_11pxh"/>-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnLogin"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_44pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:text="@string/lbl_login" android:textAllCaps="false"
+            style="@style/btnGradientRounded"
+            tools:text="@string/lbl_login"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/txtOr"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@string/or"
+            style="@style/txtPoppinsregular121"
+            tools:text="or"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnRegisterFor"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:text="@string/msg_register_for_curevive"
+            android:textAllCaps="false"
+            style="@style/btnRoundedOutline1"
+            tools:text="@string/msg_register_for_curevive"/>
+    </LinearLayout>
+</LinearLayout>

@@ -158,7 +158,7 @@
             <EditText
                 android:background="@drawable/rectangle_border_gray_700_radius_9"
                 android:ellipsize="end"
-                android:hint="@string/lbl_enter_user_name"
+                android:hint="Enter Password"
                 android:id="@+id/etGroup146" android:inputType="text"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_2pxv"

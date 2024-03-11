@@ -2,6 +2,7 @@ package com.curevivedoctor.app.modules.loginscreen.ui
 
 import android.content.Intent
 import androidx.activity.viewModels
+import androidx.core.content.ContextCompat
 import com.curevivedoctor.app.R
 import com.curevivedoctor.app.appcomponents.base.BaseActivity
 import com.curevivedoctor.app.databinding.ActivityLoginScreenBinding
@@ -17,6 +18,7 @@ class LoginScreenActivity : BaseActivity<ActivityLoginScreenBinding>(R.layout.ac
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
     binding.loginScreenVM = viewModel
+    window.statusBarColor= ContextCompat.getColor(this,R.color.statusbar)
   }
 
   override fun setUpClicks(): Unit {

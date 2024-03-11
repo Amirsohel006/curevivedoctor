@@ -2,7 +2,7 @@
 <selector
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/rectangle_bg_light_blue_a700_3f_radius_16"
-        android:state_selected="true" />
-    <item android:drawable="@drawable/img_favorite"
-        android:state_selected="false"/>
+        android:state_selected="false" />
+    <item android:drawable="@drawable/rectangle_bg_blue"
+        android:state_selected="true"/>
 </selector>

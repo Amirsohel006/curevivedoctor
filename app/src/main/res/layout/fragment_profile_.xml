@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:orientation="vertical" style="@style/groupStylewhite_A700">
             <FrameLayout android:id="@+id/frameStack"
-                android:layout_height="@dimen/_358pxv"
+                android:layout_height="@dimen/_338pxv"
                 android:layout_width="match_parent">
                 <FrameLayout
                     android:id="@+id/frameStackrectangle6311"
@@ -364,30 +364,33 @@
                 android:id="@+id/linearStudioBookong"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                style="@style/groupStylegray_52cornerRadius">
                 <com.google.android.material.tabs.TabLayout
-                    android:layout_gravity="center"
-                    app:tabGravity="center"
-                    app:tabPaddingStart="10dp"
                     android:id="@+id/tabLayoutGroup2"
-                    android:layout_height="100dp"
                     android:layout_width="match_parent"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     app:tabBackground="@drawable/tab_selector"
+                    app:tabGravity="center"
                     app:tabIndicatorColor="@android:color/transparent"
                     app:tabIndicatorHeight="0dp"
-                    app:tabMode="scrollable"
-                    android:textSize="10sp"
-                    app:tabSelectedTextColor="@color/black_900"
-                    app:tabTextColor="@color/black_900"
-                    tools:ignore="SmallSp" />
-                <androidx.viewpager2.widget.ViewPager2
-                    android:id="@+id/viewPagerViewpager"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    app:tabMinWidth="0dp"
+                app:tabMode="scrollable"
+                app:tabPaddingStart="10dp"
+                app:tabSelectedTextColor="@color/black_900"
+                app:tabTextColor="@color/black_900"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
             </LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerViewpager"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"/>
 
 
         </LinearLayout>

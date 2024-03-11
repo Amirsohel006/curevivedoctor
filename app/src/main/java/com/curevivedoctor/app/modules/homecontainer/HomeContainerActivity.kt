@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.curevivedoctor.app.R
@@ -53,6 +54,8 @@ class HomeContainerActivity : AppCompatActivity() {
             true
 
         }
+
+        window.statusBarColor= ContextCompat.getColor(this,R.color.statusbar)
     }
 
     private fun replaceFragment(fragment: Fragment){
@@ -114,21 +117,6 @@ class HomeContainerActivity : AppCompatActivity() {
 
 
 
-//                if(selectedFragment is BaseHomeFragment){
-//                    binding.frameBottombar.selectedItemId = R.id.linearColumnhome
-//                }
-//                if (selectedFragment is WalletFragment) {
-//                    binding.frameBottombar.selectedItemId = R.id.linearColumnWallet
-//                }
-//                if (selectedFragment is LiveFragment) {
-//                    binding.frameBottombar.selectedItemId=R.id.linearColumnLive
-//                }
-//                if (selectedFragment is AccountFragment)
-//                {
-//                    binding.frameBottombar.selectedItemId= R.id.linearColumnProfile
-//                } else {
-//                    super.onBackPressed()
-//                }
             }
             else {
                 super.onBackPressed()
