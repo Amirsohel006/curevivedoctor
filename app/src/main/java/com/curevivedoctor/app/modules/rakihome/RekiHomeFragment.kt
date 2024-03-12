@@ -8,6 +8,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.curevivedoctor.app.R
+import devs.mulham.horizontalcalendar.HorizontalCalendar
+import devs.mulham.horizontalcalendar.HorizontalCalendarView
+import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -37,6 +43,42 @@ class RekiHomeFragment : Fragment() {
             val recyclerView:RecyclerView=findViewById(R.id.recyclerview)
 
 
+            val calender = findViewById<HorizontalCalendarView>(R.id.calendarView1)
+
+            // Initialize horizontal calendar
+            val startDate = Calendar.getInstance()
+            startDate.add(Calendar.MONTH, -1)
+            val endDate = Calendar.getInstance()
+            endDate.add(Calendar.MONTH, 1)
+            val horizontalCalendar: HorizontalCalendar =
+                HorizontalCalendar.Builder(this, calender.id)
+                    .range(startDate, endDate)
+                    .datesNumberOnScreen(5)
+                    .build()
+
+            // Format today's date in "dd/mm/yyyy" format
+            val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+            val today = Calendar.getInstance()
+            val formattedToday = dateFormat.format(today.time)
+
+            // Parse the formatted string back to a Calendar object
+            val selectedDate = Calendar.getInstance()
+            selectedDate.time = dateFormat.parse(formattedToday)!!
+
+            // Automatically select today's date
+            horizontalCalendar.selectDate(selectedDate, true)
+
+
+            horizontalCalendar.calendarListener = object : HorizontalCalendarListener() {
+                override fun onDateSelected(date: Calendar, position: Int) {
+                    // Format selected date in "yyyy-MM-dd" format
+                    val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                    val formattedSelectedDate = dateFormat.format(date.time)
+
+                    // Make an API call and handle the response
+                    //submitAttendanceHistory(formattedSelectedDate)
+                }
+            }
             // Initialize adapter with empty list
             rekiAdapter = RekiAdapter(emptyList())
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define a gradient with start and end colors -->
+    <gradient
+        android:startColor="#0591FF"
+        android:endColor="#275BD3"
+        android:angle="90"/>
+
+    <corners
+        android:radius="@dimen/_20pxh"
+        />
+</shape>
