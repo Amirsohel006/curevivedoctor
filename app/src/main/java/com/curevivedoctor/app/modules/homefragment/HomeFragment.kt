@@ -1,10 +1,12 @@
 package com.curevivedoctor.app.modules.homefragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import androidx.activity.viewModels
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +18,7 @@ import com.curevivedoctor.app.modules.home.data.viewmodel.HomeVM
 import com.curevivedoctor.app.modules.home.ui.Listellipse543Adapter
 import com.curevivedoctor.app.modules.home.ui.ListmarkspenceAdapter
 import com.curevivedoctor.app.modules.home.ui.ListpatientsAdapter
+import com.curevivedoctor.app.modules.viewall.viewallactivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -99,6 +102,12 @@ class HomeFragment : Fragment() {
 //            )
             viewModel.listpatientsList.observe(requireActivity()) {
                 listpatientsAdapter.updateData(it)
+            }
+
+            val  linearLayout:LinearLayout=findViewById(R.id.linearRowviewall)
+            linearLayout.setOnClickListener {
+                val i=Intent(requireActivity(),viewallactivity::class.java)
+                startActivity(i)
             }
 
         }

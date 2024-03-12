@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.findViewTreeViewModelStoreOwner
 import com.curevivedoctor.app.R
 import com.curevivedoctor.app.modules.LoginScreenForReki
 import com.curevivedoctor.app.modules.homecontainer.HomeContainerActivity
@@ -24,6 +25,7 @@ class LoginWithSelection : AppCompatActivity() {
     private lateinit var doctorCard: CardView
     private lateinit var yogaTrainerCard: CardView
     private lateinit var rekiMasterCard: CardView
+    private lateinit var supervisorCard:CardView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +34,9 @@ class LoginWithSelection : AppCompatActivity() {
         doctorCard = findViewById<CardView>(R.id.linearColumndoctor)
         yogaTrainerCard = findViewById<CardView>(R.id.linearColumnyogatrain)
         rekiMasterCard = findViewById<CardView>(R.id.linearColumnrekimaste)
+        supervisorCard = findViewById<CardView>(R.id.linearColumndocto1r)
 
+        supervisorCard.setOnClickListener{selectCard(supervisorCard)}
         doctorCard.setOnClickListener { selectCard(doctorCard) }
         yogaTrainerCard.setOnClickListener { selectCard(yogaTrainerCard) }
         rekiMasterCard.setOnClickListener { selectCard(rekiMasterCard) }
@@ -57,6 +61,14 @@ class LoginWithSelection : AppCompatActivity() {
 
         // Perform actions based on which card is selected
         when (cardView.id) {
+
+            R.id.linearColumndocto1r ->{
+                val superviseImageView=cardView.findViewById<ImageView>(R.id.imageImage1)
+                superviseImageView.setImageResource(R.drawable.whitesupervisor)
+                val supervisorTextView=cardView.findViewById<TextView>(R.id.txtDoctor1)
+                supervisorTextView.setTextColor(resources.getColor(R.color.white))
+            }
+
             R.id.linearColumndoctor -> {
                 // If doctor card is selected
                 val doctorImageView = cardView.findViewById<ImageView>(R.id.imageImage)
@@ -90,6 +102,10 @@ class LoginWithSelection : AppCompatActivity() {
         val continueButton = findViewById<AppCompatButton>(R.id.btnContinue)
         continueButton.setOnClickListener {
             when (selectedCardId) {
+                R.id.linearColumndocto1r -> {
+                    val intent=Intent(this,LoginScreenActivity::class.java)
+                    startActivity(intent)
+                }
                 R.id.linearColumndoctor -> {
                     val intent = Intent(this, LoginScreenActivity::class.java)
                     startActivity(intent)
@@ -113,10 +129,14 @@ class LoginWithSelection : AppCompatActivity() {
 
     private fun resetCards() {
         // Reset background color to white for all card views
+        supervisorCard.setBackgroundColor(resources.getColor(android.R.color.white))
         doctorCard.setBackgroundColor(resources.getColor(android.R.color.white))
         yogaTrainerCard.setBackgroundColor(resources.getColor(android.R.color.white))
         rekiMasterCard.setBackgroundColor(resources.getColor(android.R.color.white))
 
+
+        val superImageview=supervisorCard.findViewById<ImageView>(R.id.imageImage1)
+        superImageview.setImageResource(R.drawable.supervisor)
         // Reset image resources for doctorCard
         val doctorImageView = doctorCard.findViewById<ImageView>(R.id.imageImage)
         doctorImageView.setImageResource(R.drawable.doctor) // Change to your white doctor image resource
@@ -129,6 +149,9 @@ class LoginWithSelection : AppCompatActivity() {
         val rekiImageView = rekiMasterCard.findViewById<ImageView>(R.id.imageImageTwo)
         rekiImageView.setImageResource(R.drawable.reki) // Change to your white reiki image resource
 
+        val superVisorTextview=supervisorCard.findViewById<TextView>(R.id.txtDoctor1)
+        superVisorTextview.setTextColor(resources.getColor(R.color.black))
+
         // Reset text color for all card views
         val doctorTextView = doctorCard.findViewById<TextView>(R.id.txtDoctor)
         doctorTextView.setTextColor(resources.getColor(R.color.black))
@@ -138,6 +161,8 @@ class LoginWithSelection : AppCompatActivity() {
 
         val rekiTextView = rekiMasterCard.findViewById<TextView>(R.id.txtRekimaster)
         rekiTextView.setTextColor(resources.getColor(R.color.black))
+
+
     }
 
 

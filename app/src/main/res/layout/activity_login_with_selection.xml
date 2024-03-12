@@ -46,15 +46,56 @@
         android:layout_marginEnd="@dimen/_20pxh"
         android:layout_marginStart="@dimen/_20pxh"
         android:layout_marginTop="@dimen/_43pxv"
-        android:layout_width="match_parent" android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout android:gravity="center_vertical"
+            android:id="@+id/linearRowyogatrainer1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="@dimen/_20pxh"
+                android:id="@+id/linearColumndocto1r"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_width="@dimen/_144pxh"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_18pxv"
+                android:paddingEnd="@dimen/_31pxh"
+                android:paddingStart="@dimen/_31pxh"
+                android:paddingTop="@dimen/_18pxv">
+                <ImageView android:id="@+id/imageImage1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_78pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="@dimen/_78pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/supervisor"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/supervisor"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDoctor1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_112pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="Supervisor"
+                    style="@style/txtPoppinsregular16"
+                    tools:text="Supervisor"/>
+            </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:layout_marginTop="5dp"
             app:cardCornerRadius="@dimen/_20pxh"
             android:id="@+id/linearColumndoctor"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_86pxh"
-            android:layout_marginStart="@dimen/_86pxh"
-            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_width="@dimen/_144pxh"
             android:orientation="vertical"
             android:paddingBottom="@dimen/_18pxv"
             android:paddingEnd="@dimen/_31pxh"
@@ -81,6 +122,8 @@
                 tools:text="@string/lbl_doctor"/>
         </androidx.cardview.widget.CardView>
 
+
+        </LinearLayout>
         <LinearLayout android:gravity="center_vertical"
             android:id="@+id/linearRowyogatrainer"
             android:layout_height="wrap_content"

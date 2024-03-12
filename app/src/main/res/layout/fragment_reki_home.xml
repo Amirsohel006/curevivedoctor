@@ -63,10 +63,25 @@
         </LinearLayout>
     </LinearLayout>
 
+
+    <devs.mulham.horizontalcalendar.HorizontalCalendarView
+        android:id="@+id/calendarView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:selectedDateBackground="@drawable/rounded_background"
+        app:selectorColor="@color/white"
+        app:textColorNormal="@color/gray_600"
+        app:textColorSelected="@color/white"
+        android:layout_marginTop="5dp"
+        />
+
+
         <LinearLayout
             android:id="@+id/linearRowtask"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_79pxv"
+            android:layout_marginTop="@dimen/_49pxv"
             android:layout_width="match_parent"
             android:orientation="horizontal">
 

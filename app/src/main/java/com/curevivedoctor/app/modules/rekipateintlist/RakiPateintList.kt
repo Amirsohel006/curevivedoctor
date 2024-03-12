@@ -12,16 +12,15 @@ class RakiPateintList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
-
-
         setContentView(R.layout.activity_raki_pateint_list)
 
 
         val backImage:ImageView=findViewById(R.id.imageArrowleftOne)
+
         backImage.setOnClickListener {
             this.finish()
         }
+
         val spinner1:Spinner=findViewById(R.id.spinnerTime)
         val spinner2:Spinner=findViewById(R.id.spinnerTime1)
         val spinner3:Spinner=findViewById(R.id.spinnerTime2)
