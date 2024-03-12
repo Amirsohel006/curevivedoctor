@@ -25,7 +25,7 @@
         android:paddingTop="10dp"
         app:itemIconTint="@drawable/icon_tinit_selector"
         app:itemTextColor="@drawable/icon_tinit_selector"
-        app:menu="@menu/nav_reki_menu"
+        app:menu="@menu/nav_menu_supervisor"
         app:labelVisibilityMode="labeled"/>
 
 </LinearLayout>

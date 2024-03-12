@@ -8,8 +8,11 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.curevivedoctor.app.R
+import com.curevivedoctor.app.modules.SettingsFragmentForSupervisor.SettingFragmentForSupervisor
+import com.curevivedoctor.app.modules.chatforsupervisor.ChatForSuperVisor
 import com.curevivedoctor.app.modules.rakihome.RekiHomeFragment
 import com.curevivedoctor.app.modules.settingfragmentForReki.SettingFragmentForReki
+import com.curevivedoctor.app.modules.supervisorHomeFragment.SuperVisorHomeFragmen
 import com.curevivedoctor.app.modules.walletfragmentforeki.WalletFragmentForReki
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -21,23 +24,23 @@ class HomeContainerForSupervisor : AppCompatActivity() {
         setContentView(R.layout.activity_home_container_for_supervisor)
         frameBottombar=findViewById(R.id.frameBottombar)
 
-        replaceFragemnt1(RekiHomeFragment())
+        replaceFragemnt1(SuperVisorHomeFragmen())
         frameBottombar.setOnItemSelectedListener {
 
             when(it.itemId ){
                 R.id.home -> {
-                    replaceFragment(RekiHomeFragment())
+                    replaceFragment(SuperVisorHomeFragmen())
                 }
 
 
-                R.id.wallet ->{
-                    replaceFragment(WalletFragmentForReki())
+                R.id.settings ->{
+                    replaceFragment(ChatForSuperVisor())
                 }
 
 
 
                 R.id.setting -> {
-                    replaceFragment(SettingFragmentForReki())
+                    replaceFragment(SettingFragmentForSupervisor())
                 }
 
             }

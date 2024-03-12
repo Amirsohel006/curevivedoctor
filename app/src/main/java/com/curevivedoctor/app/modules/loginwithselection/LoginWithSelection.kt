@@ -15,6 +15,7 @@ import androidx.lifecycle.findViewTreeViewModelStoreOwner
 import com.curevivedoctor.app.R
 import com.curevivedoctor.app.modules.LoginScreenForReki
 import com.curevivedoctor.app.modules.homecontainer.HomeContainerActivity
+import com.curevivedoctor.app.modules.loginforsupervisor.LoginForSuperVisor
 import com.curevivedoctor.app.modules.loginforyoga.LoginForYoga
 import com.curevivedoctor.app.modules.loginscreen.ui.LoginScreenActivity
 import com.curevivedoctor.app.modules.rekihomecontainer.RekiHomeContainer
@@ -103,7 +104,7 @@ class LoginWithSelection : AppCompatActivity() {
         continueButton.setOnClickListener {
             when (selectedCardId) {
                 R.id.linearColumndocto1r -> {
-                    val intent=Intent(this,LoginScreenActivity::class.java)
+                    val intent=Intent(this,LoginForSuperVisor::class.java)
                     startActivity(intent)
                 }
                 R.id.linearColumndoctor -> {
