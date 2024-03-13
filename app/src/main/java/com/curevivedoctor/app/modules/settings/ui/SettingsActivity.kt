@@ -2,6 +2,7 @@ package com.curevivedoctor.app.modules.settings.ui
 
 import android.view.View
 import androidx.activity.viewModels
+import androidx.core.content.ContextCompat
 import com.curevivedoctor.app.R
 import com.curevivedoctor.app.appcomponents.base.BaseActivity
 import com.curevivedoctor.app.databinding.ActivitySettingsBinding
@@ -30,6 +31,8 @@ class SettingsActivity : BaseActivity<ActivitySettingsBinding>(R.layout.activity
       settingsAdapter.updateData(it)
     }
     binding.settingsVM = viewModel
+
+    window.statusBarColor= ContextCompat.getColor(this,R.color.statusbar)
   }
 
   override fun setUpClicks(): Unit {

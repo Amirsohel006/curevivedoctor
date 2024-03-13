@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    tools:context=".modules.blogfragment.RecipesFragment">
+
+   <ImageView
+       android:layout_gravity="top"
+       android:src="@drawable/recipies"
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:layout_marginStart="20dp"/>
+
+</FrameLayout>
