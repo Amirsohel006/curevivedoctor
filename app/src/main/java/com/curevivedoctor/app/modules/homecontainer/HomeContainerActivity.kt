@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.curevivedoctor.app.R
 import com.curevivedoctor.app.modules.WalletFragment
+import com.curevivedoctor.app.modules.blogfragment.Blog
 import com.curevivedoctor.app.modules.chatfragment.ChatFragment
 import com.curevivedoctor.app.modules.homefragment.HomeFragment
 import com.curevivedoctor.app.modules.profilefragment.Profile_Fragment
@@ -44,7 +45,7 @@ class HomeContainerActivity : AppCompatActivity() {
                 }
 
                 R.id.setting -> {
-                    replaceFragment(SettingsFragment())
+                    replaceFragment(Blog())
                 }
 
                 R.id.settings -> {
