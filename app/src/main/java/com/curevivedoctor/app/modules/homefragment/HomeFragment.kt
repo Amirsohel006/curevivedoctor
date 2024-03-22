@@ -18,6 +18,7 @@ import com.curevivedoctor.app.modules.home.data.viewmodel.HomeVM
 import com.curevivedoctor.app.modules.home.ui.Listellipse543Adapter
 import com.curevivedoctor.app.modules.home.ui.ListmarkspenceAdapter
 import com.curevivedoctor.app.modules.home.ui.ListpatientsAdapter
+import com.curevivedoctor.app.modules.recentdoctors.RecentDoctors
 import com.curevivedoctor.app.modules.viewall.viewallactivity
 
 // TODO: Rename parameter arguments, choose names that match
@@ -107,6 +108,13 @@ class HomeFragment : Fragment() {
             val  linearLayout:LinearLayout=findViewById(R.id.linearRowviewall)
             linearLayout.setOnClickListener {
                 val i=Intent(requireActivity(),viewallactivity::class.java)
+                startActivity(i)
+            }
+
+
+            val linearLayout1:LinearLayout=findViewById(R.id.linearRowviewallOne)
+            linearLayout1.setOnClickListener {
+                val i=Intent(requireActivity(),RecentDoctors::class.java)
                 startActivity(i)
             }
 

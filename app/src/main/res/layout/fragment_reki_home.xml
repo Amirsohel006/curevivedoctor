@@ -63,8 +63,13 @@
         </LinearLayout>
     </LinearLayout>
 
+    <ImageView
+        android:src="@drawable/date"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"/>
 
     <devs.mulham.horizontalcalendar.HorizontalCalendarView
+        android:visibility="gone"
         android:id="@+id/calendarView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,7 +86,7 @@
         <LinearLayout
             android:id="@+id/linearRowtask"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_49pxv"
+
             android:layout_width="match_parent"
             android:orientation="horizontal">
 
@@ -117,8 +122,41 @@
 
 
 
+    <ScrollView
+        android:id="@+id/scrollviewwwww"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/schedule1"
+            android:src="@drawable/rekii1"
+            android:layout_marginStart="10dp"
+            android:layout_width="@dimen/_340pxh"
+            android:layout_height="@dimen/_230pxh"/>
+        <ImageView
+            android:id="@+id/schedule11"
+            android:src="@drawable/rekii2"
+            android:layout_marginStart="10dp"
+            android:layout_width="@dimen/_340pxh"
+            android:layout_height="@dimen/_230pxh"/>
+
+        <ImageView
+            android:id="@+id/schedule111"
+            android:src="@drawable/rekii3"
+            android:layout_marginStart="10dp"
+            android:layout_width="@dimen/_340pxh"
+            android:layout_height="@dimen/_230pxh"/>
+    </LinearLayout>
+
+    </ScrollView>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
         android:id="@+id/recyclerview"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"

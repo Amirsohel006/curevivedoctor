@@ -219,8 +219,41 @@
                                 tools:ignore="ContentDescription" tools:src="@drawable/img_calendar"/>
                         </LinearLayout>
                     </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/scrollview1111"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:id="@+id/images1"
+                                android:src="@drawable/doc1"
+                                android:layout_width="290dp"
+                                android:layout_height="130dp"/>
+
+                            <ImageView
+                                android:layout_gravity="start"
+                                android:id="@+id/images"
+                                android:src="@drawable/doc3"
+                                android:layout_width="290dp"
+                                android:layout_height="210dp"/>
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:id="@+id/images111111"
+                                android:src="@drawable/doc4"
+                                android:layout_width="290dp"
+                                android:layout_height="130dp"/>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
                     <androidx.recyclerview.widget.RecyclerView
                         android:gravity="end"
+                        android:visibility="gone"
                         android:id="@+id/recyclerListmarkspence"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10pxh"

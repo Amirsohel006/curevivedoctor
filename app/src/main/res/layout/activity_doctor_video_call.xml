@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    tools:context=".modules.doctorvideocall.DoctorVideoCall"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:id="@+id/arrow_back"
+        android:src="@drawable/arrow_back"
+        android:layout_width="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="35dp"/>
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/arrow_back"
+        android:id="@+id/pateint"
+        android:src="@drawable/pateint"
+        android:layout_width="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_height="300dp"/>
+
+    <ImageView
+        style="@style/framebackground"
+        android:layout_below="@+id/pateint"
+        android:src="@drawable/details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

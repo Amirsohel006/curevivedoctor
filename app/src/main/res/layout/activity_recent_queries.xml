@@ -28,9 +28,9 @@
             android:layout_marginStart="5dp"
             android:layout_width="0dp"
             android:singleLine="true"
-            android:text="@string/lbl_your_schedule"
+            android:text="Recent Queries"
             style="@style/txtAssistantbold18"
-            tools:text="@string/lbl_your_schedule"/>
+            tools:text="Recent Queries"/>
         <LinearLayout android:id="@+id/linearRowviewall"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_4pxv"
@@ -125,18 +125,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/schedule1"
-        android:src="@drawable/schedule1"
-        android:layout_marginStart="10dp"
-        android:layout_width="@dimen/_340pxh"
-        android:layout_height="@dimen/_230pxh"/>
         <ImageView
-            android:id="@+id/schedule11"
-            android:src="@drawable/schedule2"
+            android:id="@+id/schedule1"
+            android:src="@drawable/recent"
             android:layout_marginStart="10dp"
             android:layout_width="@dimen/_340pxh"
-            android:layout_height="@dimen/_230pxh"/>
+            android:layout_height="@dimen/_200pxh"/>
+        <ImageView
+            android:id="@+id/schedule11"
+            android:src="@drawable/recent2"
+            android:layout_marginStart="10dp"
+            android:layout_width="@dimen/_340pxh"
+            android:layout_height="@dimen/_200pxh"/>
     </LinearLayout>
 
 

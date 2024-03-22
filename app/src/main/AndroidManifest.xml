@@ -16,6 +16,15 @@
         android:theme="@style/Theme.MyApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".modules.recentdoctors.RecentDoctors"
+            android:exported="false" />
+        <activity
+            android:name=".modules.recentqueries.RecentQueries"
+            android:exported="false" />
+        <activity
+            android:name=".modules.doctorvideocall.DoctorVideoCall"
+            android:exported="false" />
+        <activity
             android:name=".modules.blogfragment.BlogAdapter"
             android:exported="false" />
         <activity
