@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -19,28 +20,42 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class HomeContainerForSupervisor : AppCompatActivity() {
 
     private lateinit var frameBottombar: BottomNavigationView
+    var previousSelectedItemView: View? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_container_for_supervisor)
         frameBottombar=findViewById(R.id.frameBottombar)
 
         replaceFragemnt1(SuperVisorHomeFragmen())
+
+
+        var previousSelectedItem = R.id.home
+
         frameBottombar.setOnItemSelectedListener {
+            frameBottombar.findViewById<View>(previousSelectedItem).background = null
+
 
             when(it.itemId ){
                 R.id.home -> {
                     replaceFragment(SuperVisorHomeFragmen())
+                   // frameBottombar.findViewById<View>(R.id.home).setBackgroundResource(R.drawable.backgound)
+                    updateSelectedItemBackground(frameBottombar.findViewById(R.id.home))
                 }
 
 
                 R.id.settings ->{
                     replaceFragment(ChatForSuperVisor())
+                  //  frameBottombar.findViewById<View>(R.id.settings).setBackgroundResource(R.drawable.backgound)
+                    updateSelectedItemBackground(frameBottombar.findViewById(R.id.home))
+
                 }
 
 
 
                 R.id.setting -> {
                     replaceFragment(SettingFragmentForSupervisor())
+                    updateSelectedItemBackground(frameBottombar.findViewById(R.id.setting))
+
                 }
 
             }
@@ -52,6 +67,17 @@ class HomeContainerForSupervisor : AppCompatActivity() {
     }
 
 
+
+    private fun updateSelectedItemBackground(selectedItemView: View) {
+        // Hide background from the previously selected item
+        previousSelectedItemView?.findViewById<View>(R.id.background)?.visibility = View.INVISIBLE
+
+        // Show background for the selected item
+        selectedItemView.findViewById<View>(R.id.background)?.visibility = View.VISIBLE
+
+        // Update previousSelectedItemView to the currently selected item
+        previousSelectedItemView = selectedItemView
+    }
     private fun replaceFragment(fragment: Fragment){
         val fragmentManager=supportFragmentManager
         val fragmentTransaction=fragmentManager.beginTransaction()

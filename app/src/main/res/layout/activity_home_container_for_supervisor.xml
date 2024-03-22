@@ -10,6 +10,7 @@
 
 
 
+
     <FrameLayout
         android:id="@+id/fragmentContainer"
         android:layout_height="match_parent"
@@ -25,6 +26,7 @@
         android:paddingTop="10dp"
         app:itemIconTint="@drawable/icon_tinit_selector"
         app:itemTextColor="@drawable/icon_tinit_selector"
+        android:drawableStart="@drawable/checked_icon_background"
         app:menu="@menu/nav_menu_supervisor"
         app:labelVisibilityMode="labeled"/>
 

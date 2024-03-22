@@ -174,8 +174,36 @@
                                 tools:ignore="ContentDescription" tools:src="@drawable/img_calendar"/>
                         </LinearLayout>
                     </LinearLayout>
+
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/scrollview1111"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <ImageView
+                        android:layout_gravity="start"
+                        android:id="@+id/images1"
+                        android:src="@drawable/recentimage1"
+                        android:layout_width="290dp"
+                        android:layout_height="210dp"/>
+
+                        <ImageView
+                            android:layout_gravity="start"
+                            android:id="@+id/images"
+                            android:src="@drawable/recent_image2"
+                            android:layout_width="290dp"
+                            android:layout_height="210dp"/>
+
+                    </LinearLayout>
+                    </HorizontalScrollView>
                     <androidx.recyclerview.widget.RecyclerView
                         android:gravity="end"
+                        android:visibility="gone"
                         android:id="@+id/recyclerListmarkspence"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10pxh"
@@ -237,8 +265,38 @@
                                 tools:ignore="ContentDescription" tools:src="@drawable/img_calendar"/>
                         </LinearLayout>
                     </LinearLayout>
+
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_gravity="start"
+                            android:id="@+id/images11"
+                            android:src="@drawable/doc_1"
+                            android:layout_width="290dp"
+                            android:layout_height="210dp"/>
+
+                        <ImageView
+                            android:layout_gravity="start"
+                            android:id="@+id/images111"
+                            android:src="@drawable/doc2"
+                            android:layout_width="290dp"
+                            android:layout_height="210dp"/>
+
+                    </LinearLayout>
+
+                    </HorizontalScrollView>
+
                     <androidx.recyclerview.widget.RecyclerView
                         android:gravity="end"
+                        android:visibility="gone"
                         android:id="@+id/recyclerListmarkspence1"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10pxh"
@@ -299,8 +357,36 @@
                                 tools:ignore="ContentDescription" tools:src="@drawable/img_calendar"/>
                         </LinearLayout>
                     </LinearLayout>
+
+
+                    <HorizontalScrollView
+                        android:id="@+id/scrollview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/scrollview3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_gravity="start"
+                            android:id="@+id/image1"
+                            android:src="@drawable/reki1"
+                            android:layout_width="290dp"
+                            android:layout_height="210dp"/>
+
+                        <ImageView
+                            android:layout_gravity="start"
+                            android:id="@+id/image"
+                            android:src="@drawable/recent_image2"
+                            android:layout_width="290dp"
+                            android:layout_height="210dp"/>
+
+                    </LinearLayout>
+                    </HorizontalScrollView>
                     <androidx.recyclerview.widget.RecyclerView
                         android:gravity="end"
+                        android:visibility="gone"
                         android:id="@+id/recyclerListmarkspence11"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10pxh"
@@ -326,9 +412,9 @@
                             android:layout_weight="0.67"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@string/lbl_recent_patients"
+                            android:text="Recent Doctors"
                             style="@style/txtAssistantbold18"
-                            tools:text="@string/lbl_recent_patients"/>
+                            tools:text="Recent Doctors"/>
                         <LinearLayout
                             android:id="@+id/linearRowviewallOne"
                             android:layout_height="wrap_content"
@@ -359,7 +445,7 @@
                                 tools:ignore="ContentDescription" tools:src="@drawable/img_calendar"/>
                         </LinearLayout>
                     </LinearLayout>
-                    <androidx.recyclerview.widget.RecyclerView
+                     <androidx.recyclerview.widget.RecyclerView
                         android:gravity="end"
                         android:id="@+id/recyclerListellipse543"
                         android:layout_height="wrap_content"

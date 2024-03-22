@@ -15,6 +15,8 @@ import com.curevivedoctor.app.modules.home.ui.Listellipse543Adapter
 import com.curevivedoctor.app.modules.home.ui.ListmarkspenceAdapter
 import com.curevivedoctor.app.modules.home.ui.ListpatientsAdapter
 import com.curevivedoctor.app.modules.homefragment.recyclerView2
+import com.curevivedoctor.app.modules.recentdoctors.RecentDoctors
+import com.curevivedoctor.app.modules.recentqueries.RecentQueries
 import com.curevivedoctor.app.modules.viewall.viewallactivity
 
 private const val ARG_PARAM1 = "param1"
@@ -98,11 +100,23 @@ class SuperVisorHomeFragmen : Fragment() {
             }
 
 
+            val linearLayout1:LinearLayout=findViewById(R.id.linearRowviewall1)
+            linearLayout1.setOnClickListener {
+                val i=Intent(requireActivity(),viewallactivity::class.java)
+                startActivity(i)
+            }
 
 
             val  linearLayout: LinearLayout =findViewById(R.id.linearRowviewall)
             linearLayout.setOnClickListener {
-                val i= Intent(requireActivity(), viewallactivity::class.java)
+                val i= Intent(requireActivity(), RecentQueries::class.java)
+                startActivity(i)
+            }
+
+
+            val linearLayout2:LinearLayout=findViewById(R.id.linearRowviewallOne)
+            linearLayout2.setOnClickListener {
+                val i=Intent(requireActivity(),RecentDoctors::class.java)
                 startActivity(i)
             }
         }
