@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/_20pxh"
         android:layout_marginStart="@dimen/_20pxh"
-        android:layout_marginTop="@dimen/_43pxv"
+        android:layout_marginTop="@dimen/_23pxv"
         android:layout_width="match_parent"
         android:orientation="vertical">
 
@@ -53,16 +53,18 @@
             android:id="@+id/linearRowyogatrainer1"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_39pxv"
+            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:orientation="horizontal">
 
 
             <androidx.cardview.widget.CardView
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="6dp"
                 app:cardCornerRadius="@dimen/_20pxh"
                 android:id="@+id/linearColumndocto1r"
-                android:layout_height="wrap_content"
+                android:layout_height="171dp"
                 android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginBottom="5dp"
                 android:layout_width="@dimen/_144pxh"
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/_18pxv"
@@ -91,9 +93,10 @@
             </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             app:cardCornerRadius="@dimen/_20pxh"
             android:id="@+id/linearColumndoctor"
-            android:layout_height="wrap_content"
+            android:layout_height="171dp"
             android:layout_marginStart="@dimen/_18pxh"
             android:layout_width="@dimen/_144pxh"
             android:orientation="vertical"
@@ -128,6 +131,7 @@
             android:id="@+id/linearRowyogatrainer"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_39pxv"
+            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:orientation="horizontal">
 
@@ -138,7 +142,7 @@
                 app:cardCornerRadius="@dimen/_20pxh"
                 android:gravity="center"
                 android:id="@+id/linearColumnyogatrain"
-                android:layout_height="wrap_content"
+                android:layout_height="171dp"
                 android:layout_width="@dimen/_144pxh"
                 android:orientation="vertical"
                 android:paddingBottom="@dimen/_13pxv"
@@ -147,7 +151,7 @@
                 android:paddingTop="@dimen/_13pxv" style="@style/groupStylewhite_A700cornerRadius">
                 <ImageView android:id="@+id/imageImageOne"
                     android:layout_height="@dimen/_95pxh"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="4dp"
                     android:layout_width="@dimen/_95pxh"
                     android:scaleType="fitXY"
                     android:layout_gravity="center_horizontal"
@@ -174,7 +178,7 @@
                 app:cardCornerRadius="@dimen/_20pxh"
                 android:layout_marginEnd="5dp"
                 android:id="@+id/linearColumnrekimaste"
-                android:layout_height="wrap_content"
+                android:layout_height="171dp"
                 android:layout_marginStart="@dimen/_18pxh"
                 android:layout_gravity="center"
                 android:layout_width="@dimen/_144pxh"
@@ -186,7 +190,7 @@
                 style="@style/groupStylecornerRadius">
 
                 <ImageView
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="4dp"
                     android:id="@+id/imageImageTwo"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="@dimen/_90pxh"
@@ -219,7 +223,7 @@
         android:layout_marginBottom="@dimen/_5pxv"
         android:layout_marginEnd="@dimen/_16pxh"
         android:layout_marginStart="@dimen/_16pxh"
-        android:layout_marginTop="@dimen/_93pxv"
+        android:layout_marginTop="@dimen/_43pxv"
         android:layout_width="match_parent"
         android:paddingBottom="@dimen/_14pxv"
         android:paddingEnd="@dimen/_30pxh"

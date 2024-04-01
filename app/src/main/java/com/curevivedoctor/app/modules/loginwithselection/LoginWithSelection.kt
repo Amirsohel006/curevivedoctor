@@ -58,7 +58,7 @@ class LoginWithSelection : AppCompatActivity() {
         resetCards()
 
         // Change background color of selected card
-        cardView.setBackgroundResource(R.drawable.rectangle_gradient_s_light_blue_a700_e_blue_800_radius_9)
+        cardView.setBackgroundResource(R.drawable.rectangle_for_multiple_selection)
 
         // Perform actions based on which card is selected
         when (cardView.id) {

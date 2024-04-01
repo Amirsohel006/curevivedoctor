@@ -190,6 +190,12 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">500</item>
     </style>
+    <style name="txtPoppinsmedium12_51">
+        <item name="android:textSize">@dimen/_18pxh</item>
+        <item name="android:textColor">@color/gray_901</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
     <style name="txtPoppinsmedium12_2">
         <item name="android:textSize">@dimen/_12pxh</item>
         <item name="android:textColor">@color/bluegray_200</item>
@@ -762,6 +768,12 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">500</item>
     </style>
+<!--    <style name="txtPoppinsmedium181">-->
+<!--        <item name="android:textSize">@dimen/_18pxh</item>-->
+<!--        <item name="android:textColor">@color/black</item>-->
+<!--        <item name="android:fontFamily">@font/poppins</item>-->
+<!--        <item name="android:textFontWeight" tools:targetApi="p">500</item>-->
+<!--    </style>-->
     <style name="txtPoppinssemibold14">
         <item name="android:textSize">@dimen/_14pxh</item>
         <item name="android:textColor">@color/white_A700</item>
@@ -1069,6 +1081,13 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">400</item>
         <item name="android:background">@drawable/rectangle_gradient_s_blue_503_e_blue_503_border_bluegray_102_radius_10</item>
+    </style>
+    <style name="btnGradientRoundedOutline1">
+        <item name="android:textSize">@dimen/_13pxh</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textFontWeight" tools:targetApi="p">600</item>
+        <item name="android:background">@drawable/rectangle_gradient_s_blue_a700_c_blue_a700_9b_e_blue_a700_47_border_white_a700_radius_17</item>
     </style>
     <style name="groupStylewhite_A700cornerRadius">
         <item name="android:background">@drawable/rectangle_bg_white_a700_radius_tl_30_tr_30</item>
@@ -1587,5 +1606,25 @@
         <item name="android:textColor">@color/black_900</item>
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textFontWeight" tools:targetApi="p">500</item>
+    </style>
+
+    <style name="groupStylegray_100cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_gray_100_radius_13</item>
+    </style>
+
+
+    <style name="txtAssistantromanregular12">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/blue_gray_800</item>
+        <item name="android:fontFamily">@font/assistant</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+    </style>
+
+    <style name="etSolidRoundedOutline">
+        <item name="android:textSize">@dimen/_12pxh</item>
+        <item name="android:textColor">@color/blue_gray_300</item>
+        <item name="android:fontFamily">@font/assistant</item>
+        <item name="android:textFontWeight" tools:targetApi="p">400</item>
+        <item name="android:background">@drawable/rectangle_bg_white_a700_border_light_blue_a700_radius_9</item>
     </style>
 </resources>

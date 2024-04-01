@@ -25,6 +25,7 @@
         android:layout_height="300dp"/>
 
     <ImageView
+        android:id="@+id/pateintclick"
         style="@style/framebackground"
         android:layout_below="@+id/pateint"
         android:src="@drawable/details"

@@ -85,6 +85,7 @@
                 app:tabIndicatorColor="@android:color/transparent"
                 app:tabIndicatorHeight="0dp"
                 app:tabMode="fixed"
+                app:tabPadding="10dp"
                 app:tabPaddingStart="10dp"
                 app:tabSelectedTextColor="@color/black_900"
                 app:tabTextColor="@color/black_900"
