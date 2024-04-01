@@ -355,7 +355,8 @@
                         android:singleLine="true"
                         android:text="@string/lbl_submit"
                         android:textAllCaps="false"
-                        style="@style/btnGradientRounded" tools:text="@string/lbl_submit"/>
+                        style="@style/btnGradientRounded"
+                        tools:text="@string/lbl_submit"/>
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

@@ -210,4 +210,5 @@
   <color name="white_A700_01">#ffffff</color>
   <color name="black_900_5b">#5b000000</color>
   <color name="blue_gray_800_01">#324f5e</color>
+  <color name="blue_gray_300">#96a7af</color>
 </resources>

@@ -16,6 +16,15 @@
         android:theme="@style/Theme.MyApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".modules.personalhistory.PersonalHistory"
+            android:exported="false" />
+        <activity
+            android:name=".modules.dialoguefortreatmentcard.DialogueForTreatmentCard"
+            android:exported="false" />
+        <activity
+            android:name=".modules.treatmentcardfordoctor.TreatmentCardForDocotors"
+            android:exported="false" />
+        <activity
             android:name=".modules.recentdoctors.RecentDoctors"
             android:exported="false" />
         <activity

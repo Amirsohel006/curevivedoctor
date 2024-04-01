@@ -33,14 +33,36 @@
             android:layout_marginTop="@dimen/_22pxv"
             android:layout_width="match_parent"
             android:orientation="vertical">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
             <TextView android:ellipsize="end"
                 android:id="@+id/txtKabirsingh"
                 android:layout_height="wrap_content"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:singleLine="true"
                 android:text="@string/lbl_kabir_singh"
                 style="@style/txtAssistantbold24"
                 tools:text="@string/lbl_kabir_singh"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="59dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/icon_message"/>
+
+                <ImageView
+                    android:layout_marginTop="4dp"
+                    android:layout_width="39dp"
+                    android:layout_height="39dp"
+                    android:src="@drawable/bell_icon"/>
+            </LinearLayout>
+
+
             <LinearLayout android:id="@+id/linearRowview"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content" android:orientation="horizontal">
@@ -137,20 +159,20 @@
             android:src="@drawable/rekii1"
             android:layout_marginStart="10dp"
             android:layout_width="@dimen/_340pxh"
-            android:layout_height="@dimen/_230pxh"/>
+            android:layout_height="@dimen/_175pxh"/>
         <ImageView
             android:id="@+id/schedule11"
             android:src="@drawable/rekii2"
             android:layout_marginStart="10dp"
             android:layout_width="@dimen/_340pxh"
-            android:layout_height="@dimen/_230pxh"/>
+            android:layout_height="@dimen/_175pxh"/>
 
         <ImageView
             android:id="@+id/schedule111"
             android:src="@drawable/rekii3"
             android:layout_marginStart="10dp"
             android:layout_width="@dimen/_340pxh"
-            android:layout_height="@dimen/_230pxh"/>
+            android:layout_height="@dimen/_175pxh"/>
     </LinearLayout>
 
     </ScrollView>
